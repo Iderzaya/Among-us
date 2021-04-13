@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@media all {
+
+    header, main {display: block;}    
+    body { margin: 0; padding: 0;background-image: url(https://i.pinimg.com/originals/ce/09/b3/ce09b3dc3bc1ab51293d55b610dc3f22.jpg); background-repeat: repeat; color: #fff; font-family: 'AmongUs'; font-size: 30px;}
+
+}
+@media screen {
+
+    .first {
+      
+      background-image: url(i/1st.png); 
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 884px;
+      height: 587px;
+      margin: 0 auto;
+      text-align: center;
+      animation-name: appear;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+
+    }
+
+    .second {
+      min-height: 100%;
+      background-image: url(i/b1.jpeg); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 1440px;
+      height: 810px;
+      //height: auto;
+      animation-name: appear;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes appear {
+      from{opacity: 0;}
+      to{opacity: 1;}
+    }
+  
+    .secondNav ul li {
+      float: right;
+    }  
+
+    header {
+      padding: 30px 0; 
+      font-family: 'AmongUs';
+
+      h1 {
+        margin: 0 auto; 
+        text-align: center; 
+        font-size: 50px;
+      }
+
+      nav ul {
+        list-style: none; 
+        margin: 0; 
+        padding: 10px 0 0;
+      }
+
+      ul li {
+        margin-right: 30px; 
+        float: left; 
+        font-size: 25px;
+      }
+      
+      a{
+        color: #fff;
+      }
+
+      a:hover, header a:focus {
+        color: #fff; 
+        font-size: 30px; 
+        text-decoration: none;
+      }
+
+      h1 a:hover, header h1 a:focus {
+        color: #fff; 
+        font-size: 55px; 
+        text-decoration: none;
+      }
+    }
+
+    .logo {
+        width: 200px; 
+        margin: 0; 
+        position: absolute; 
+        top: 50%; 
+        -ms-transform: translateY(-50%); 
+        transform: translateY(-50%);
+      }
+    //.logo:focus, .logo:hover {width: 180px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
+
+    .maps {
+        display: flex;
+        height: 400px;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%; 
+        overflow: auto; 
+        white-space: nowrap;
+      }
+      
+      .card {
+        margin: 0 2vw;
+        width: 20vw;
+        flex-shrink: 0;
+        padding: 2vw;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 3px;
+        border: 2px solid #000;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+      
+        &-title {
+          transition: 0.3s;
+          text-align: center;
+          font-family: "Space Mono", monospace;
+          margin: 2vw 0 0;
+          font-size: 2.5vw;
+          opacity: 1;
+          transform: scale(0.7);
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+      
+        
+      
+        img {
+          max-width: 100%;
+          max-height: 50vh;
+          opacity: 1;
+          margin: auto;
+          display: block;
+          transition: 0.35s;
+          transform: none;
+          box-sizing: border-box;
+          border-radius: 10px;
+          //transform: rotate(6deg) translate(0, 40px) scaleY(0.6);
+        }
+      
+        &.isVisible {
+          img {
+            max-width: 100%;
+            opacity: 1;
+            transform: none;
+          }
+      
+          .card-title {
+            opacity: 1;
+            transform: none;
+            transition-delay: 0.1s;
+          }
+        }
+      
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+    .statistics{
+      
+      margin: 50px;
+      img{
+
+        max-width: 75%;
+        margin: 0 auto;
+        //float: right;
+        display: flex;
+      }
+      
+    }
+
+    .statText{
+
+      color: white;
+      font-family: 'Roboto', sans-serif; 
+      margin: auto 0;
+
+      h1{
+        font-family: 'AmongUs';
+        margin: 20px 0 0 0;
+        font-size: 70px;
+        font-weight: 700;
+      }
+
+      p{
+        margin: 40px 0;
+      }
+      button{
+
+        margin: 0 auto;
+        display: block;
+        width: 30%;
+        background: none;
+        text-decoration: none;
+        border-width: 4px;
+        border-radius: 10px;
+        border-color: white;
+        font-family: 'AmongUs';
+        text-align: center;
+        color: white;
+        font-size: 30px;
+
+        &:hover, &:focus {
+          text-decoration-color: white;
+          border-color: #03AC13;
+        }
+      }
+
+      a {
+        margin: 0 auto;
+        text-align: center;
+
+        &:hover, &:focus{
+          text-decoration: none;
+          text-decoration-color: white;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 1010px){
+  .second{
+    height: auto;
+    width: 100%;
+  }
+}
