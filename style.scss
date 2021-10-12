@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@media all {
+
+    header, main {display: block;}    
+    body { margin: 0; padding: 0;background-image: url(https://i.pinimg.com/originals/ce/09/b3/ce09b3dc3bc1ab51293d55b610dc3f22.jpg); background-repeat: repeat; color: #fff; font-family: 'AmongUs'; font-size: 30px;}
+    div{color: white; font-family: 'AmongUs';font-size: 30px;}
+
+}
+
+@media screen {
+
+  header {
+    padding: 30px 0; 
+    font-family: 'AmongUs';
+
+    h1 {
+      margin: 0 auto; 
+      text-align: center; 
+      font-size: 50px;
+    }
+
+    nav ul {
+      list-style: none; 
+      margin: 0; 
+      padding: 10px 0 0;
+    }
+
+    ul li {
+      margin-right: 30px; 
+      float: left; 
+      font-size: 25px;
+    }
+    
+    a{
+      color: rgba(255, 255, 255, 0.8);
+      transition: all .4s ease;
+    }
+
+    a:hover, header a:focus {
+      color: #fff; 
+      font-size: 30px; 
+      text-decoration: none;
+      
+    }
+
+    h1 a:hover, header h1 a:focus {
+      color: #fff; 
+      font-size: 55px; 
+      text-decoration: none;
+    }
+    .secondNav ul li {
+      float: right;
+    }  
+    .logo {
+        width: 200px; 
+        margin: 0; 
+        position: absolute; 
+        top: 50%; 
+        -ms-transform: translateY(-50%); 
+        transform: translateY(-50%);
+      }
+  }
+
+  .headline {
+    margin: 0px;
+    text-align: center;
+    min-height: 100%;
+    //display: inline-block;
+    position: relative;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+
+    img {
+        object-fit: cover;
+        width: 1440px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        filter: brightness(0.4);
+      }
+
+      blockquote {
+          position: absolute;
+          top: 20%;
+          left: 35%;
+          font-size: 100px;
+          width: 400px;
+          line-height: 100px;
+          text-transform: uppercase;
+      }
+
+      .botline {
+          position: absolute;
+          bottom: 0;
+        background-image: linear-gradient(rgba(0,0,0,0), black);
+        height: 200px;
+        width: 100%;
+      }
+
+      .topline {
+        position: absolute;
+        top: 0;
+      background-image: linear-gradient(black, rgba(0,0,0,0));
+      height: 150px;
+      width: 100%;
+    }
+    .learn{
+      display: inline-block;
+      margin: 0px;
+      justify-content: center;
+      text-align: center;
+      width: 200px;
+      border: rgba(255, 255, 255, 0.2);
+      border-style: solid;
+      border-width: 3px;
+      background-color:rgba(0, 0, 0, 0);
+      padding: 10px 30px;
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      bottom: 40%;
+      right: 35%;
+      transition: all .4s ease;
+
+      &:hover, &:focus{
+          color: white;
+          text-decoration: none;
+          bottom: 41%;
+          border: rgba(255, 0, 0, 0.4);
+          border-style: solid;
+          border-width: 3px;
+      }
+  }
+  .download{
+      display: inline-block;
+          margin: 0px;
+          justify-content: center;
+          text-align: center;
+          width: 200px;
+          border: rgba(255, 255, 255, 0.2);
+          border-style: solid;
+          border-width: 3px;
+          background-color:rgba(0, 0, 0, 0);
+          padding: 10px 30px;
+          color: white;
+          text-decoration: none;
+          position: absolute;
+          bottom: 40%;
+          left: 35%;
+          transition: all .4s ease;
+  
+        &:hover, &:focus{
+          color: white;
+          text-decoration: none;
+          bottom: 41%;
+          border: rgba(255, 0, 0, 0.4);;
+          border-style: solid;
+          border-width: 3px;
+        }
+    }
+  }
+      
+    @keyframes appear {
+        from{opacity: 0;}
+        to{opacity: 1;}
+      }
+    
+    .news{
+      
+      color: white;
+      font-family: 'AmongUs';
+      font-size: 40px;
+
+      hr{
+        color: aqua;
+        height: 10px;
+        width: 100%;
+      }
+
+      .piece{
+        //background-color: yellowgreen;
+        padding: 0 5px ;
+        img{
+          max-width: 100%;
+        }
+
+        .inneText{
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+
+    .map{
+      text-align: center;
+      margin: 0;
+      span{
+        display: block;
+        font-size: 50px;
+        opacity: 0.7;
+        font-style: italic;
+        height: 50px;
+      }
+      strong {
+        font-size: 100px;
+        font-style: italic;
+      }
+      p{
+        font-size: 1.3vw;
+        padding: 0 20%;
+        font-family: "Alegreya Sans Thin", sans-serif;
+        font-weight: thin;
+        letter-spacing: 0.08em;
+      }
+    }
+      .maps {
+          display: flex;
+          height: 250px;
+          align-items: center;
+          box-sizing: border-box;
+          width: 100%; 
+          overflow: auto; 
+          white-space: nowrap;
+        }
+        
+        .card {
+          margin: 0 2vw;
+          width: 20vw;
+          flex-shrink: 0;
+          padding: 2vw;
+          box-sizing: border-box;
+          position: relative;
+          border-radius: 3px;
+          border: 2px solid #000;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          box-shadow: 4px 4px 0 rgba(223, 69, 69, 0.1);
+          transition: 0.3s;
+          height: 190px;
+        
+          &-title {
+            transition: 0.3s;
+            text-align: center;
+            font-family: "Space Mono", monospace;
+            margin: 2vw 0 0;
+            font-size: 2.5vw;
+            opacity: 1;
+            transform: scale(0.7);
+            color: black;
+          }
+  
+          &:last-child{
+            margin-right: 0;}
+
+            &:hover, &:focus{
+              width: 21vw;
+              height: 210px;
+              .card-title {
+                font-size: 3vw;
+              }
+          }
+        
+          img {
+            max-width: 100%;
+            max-height: 50vh;
+            opacity: 1;
+            margin: auto;
+            display: block;
+            transition: 0.35s;
+            transform: none;
+            box-sizing: border-box;
+            border-radius: 10px;
+            //transform: rotate(6deg) translate(0, 40px) scaleY(0.6);
+          }
+        
+          &.isVisible {
+            img {
+              max-width: 100%;
+              opacity: 1;
+              transform: none;
+            }
+        
+            .card-title {
+              opacity: 1;
+              transform: none;
+              transition-delay: 0.1s;
+            }
+          }
+        
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+  
+  
+      .statistics{
+        
+        margin: 50px;
+        img{
+  
+          max-width: 100%;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        
+      }
+  
+      .statText{
+  
+        color: white;
+        font-family: "Alegreya Sans Thin", sans-serif;
+        margin: auto 0;
+  
+        h1{
+          font-family: 'AmongUs';
+          margin: 20px 0px 0 20px;
+          font-size: 70px;
+          font-weight: 700;
+        }
+  
+        p{
+          margin: 40px 0px 40px 20px;
+          font-size: 1.3vw;        
+        }
+        button{
+  
+          margin: 0 auto;
+          display: block;
+          width: 30%;
+          background: none;
+          text-decoration: none;
+          border-radius: 10px;
+          border: solid 2px white;
+          padding: 5px;
+          background-clip: content-box; 
+          background-color: white;
+          font-family: 'AmongUs';
+          text-align: center;
+          color: black;
+          font-size: 30px;
+  
+          &:hover, &:focus {
+            text-decoration-color: white;
+            border-color: #03AC13;
+          }
+
+        }
+  
+        a {
+          margin: 0 auto;
+          text-align: center;
+  
+          &:hover, &:focus{
+            text-decoration: none;
+            text-decoration-color: white;
+          }
+        }
+
+       
+      }
+  
+      .airship{
+        background: url(./i/airship.jpeg) no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100%;
+        min-width: 1024px;
+  
+        height: 100%;
+        width: auto;
+        }
+  }
+  
+  @media screen and (max-width: 1010px){
+    .second{
+      height: auto;
+      width: 100%;
+    }
+}
