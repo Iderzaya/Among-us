@@ -433,7 +433,7 @@
     height: 100%;
     width: auto;
   }
-  footer .menu {
+  .menu {
     padding: 10px;
   }
   footer.grid {
