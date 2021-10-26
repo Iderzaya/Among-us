@@ -20,6 +20,53 @@
 }
 
 @media screen {
+  .dropbtn {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    border: none;
+    background-color: #000;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .dropdown-content a {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+  }
+  .dropdown-content a:hover {
+    font-size: 30px;
+    color: white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    font-size: 30px;
+  }
+  .dropdown:hover .dropbtn {
+    font-size: 30px;
+    color: white;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
   header {
     padding: 30px 0;
     font-family: 'AmongUs';
@@ -385,6 +432,102 @@
     min-width: 1024px;
     height: 100%;
     width: auto;
+  }
+  .menu {
+    padding: 10px;
+  }
+  footer.grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer.wrapper {
+    padding: 80px 110px;
+  }
+  footer form {
+    padding: 10px;
+  }
+  footer form.grid {
+        grid-template-areas: "nm em" "fd fd";
+    -ms-grid-rows: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer .formName {
+    background-color: #000;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 1;
+    grid-area: nm;
+  }
+  footer .formMail {
+    background-color: #000;
+    margin: 5px;
+    grid-row: 1;
+    grid-column: 2;
+    grid-area: em;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  footer .formFeedback {
+    background-color: #000;
+    margin: 5px;
+    grid-row: 2;
+    grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: fd;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  footer .submit {
+    background-color: white;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  footer li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  footer li a {
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  footer li a:hover, footer li a:focus {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  footer li .logo {
+    height: 30px;
+    width: 120px;
+  }
+  footer .logoli {
+    float: right;
+  }
+  footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  footer #social {
+    width: 200px;
+    height: 52px;
+    margin-bottom: 15px;
+    background: url(./i/social-media-icons.png) top left no-repeat;
+  }
+  footer #social a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .firstHalf {
+    text-align: center;
   }
 }
 
