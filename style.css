@@ -33,6 +33,7 @@
     display: inline-block;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
+    margin: 0;
   }
   .dropdown-content {
     display: none;
@@ -433,7 +434,7 @@
     height: 100%;
     width: auto;
   }
-  .menu {
+  footer .menu {
     padding: 10px;
   }
   footer.grid {
@@ -458,15 +459,15 @@
     margin: 5px;
     border: 1px solid white;
     border-radius: 5px;
-    grid-row: 1;
-    grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: nm;
   }
   footer .formMail {
     background-color: #000;
     margin: 5px;
-    grid-row: 1;
-    grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: em;
     border: 1px solid white;
     border-radius: 5px;
@@ -474,8 +475,8 @@
   footer .formFeedback {
     background-color: #000;
     margin: 5px;
-    grid-row: 2;
-    grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: fd;
     border: 1px solid white;
