@@ -25,14 +25,14 @@
     font-size: 25px;
     border: none;
     background-color: #000;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .dropdown {
     position: relative;
     display: inline-block;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     margin: 0;
   }
   .dropdown-content {
@@ -42,8 +42,8 @@
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .dropdown-content a {
     color: rgba(255, 255, 255, 0.8);
@@ -89,8 +89,8 @@
   }
   header a {
     color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   header a:hover, header header a:focus {
     color: #fff;
@@ -178,8 +178,8 @@
     position: absolute;
     bottom: 40%;
     right: 35%;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .headline .learn:hover, .headline .learn:focus {
     color: white;
@@ -207,8 +207,8 @@
     position: absolute;
     bottom: 40%;
     left: 35%;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .headline .download:hover, .headline .download:focus {
     color: white;
@@ -238,21 +238,111 @@
     color: white;
     font-family: 'AmongUs';
     font-size: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .news hr {
-    color: aqua;
-    height: 10px;
+  .news picture {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .news picture img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+  .news .title {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .news p {
+    font-size: 40px;
+    text-align: left;
+  }
+  .news .innerText {
+    margin-top: 10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    height: 20vw;
+    width: calc(100% - 20px);
+    border: 1px solid #696b78;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news .innerText span {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 80%;
+    font-size: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .news .newsCards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   .news .piece {
-    padding: 0 5px;
+    margin: 5px;
+    margin-bottom: 60px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    min-height: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .news .piece img {
     max-width: 100%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
-  .news .piece .inneText {
-    position: absolute;
-    bottom: 0;
+  .news .piece:hover img, .news .piece:focus img {
+    overflow: hidden;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  .news .piece:hover span, .news .piece:focus span {
+    margin-top: 20px;
   }
   .map {
     text-align: center;
@@ -313,13 +403,13 @@
             flex-direction: column;
     -webkit-box-shadow: 4px 4px 0 rgba(223, 69, 69, 0.1);
             box-shadow: 4px 4px 0 rgba(223, 69, 69, 0.1);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     height: 190px;
   }
   .card-title {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     text-align: center;
     font-family: "Space Mono", monospace;
     margin: 2vw 0 0;
@@ -345,8 +435,8 @@
     opacity: 1;
     margin: auto;
     display: block;
-    -webkit-transition: 0.35s;
-    transition: 0.35s;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     -webkit-transform: none;
             transform: none;
     -webkit-box-sizing: border-box;
@@ -370,10 +460,10 @@
     margin-left: 0;
   }
   .statistics {
-    margin: 50px;
+    margin: 50px 0;
   }
   .statistics img {
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     margin: auto;
     top: 0;
@@ -494,8 +584,8 @@
   }
   footer li a {
     color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   footer li a:hover, footer li a:focus {
     color: #fff;
