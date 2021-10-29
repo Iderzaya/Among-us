@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@media all{
+    header, main {
+        display: block;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(https://i.pinimg.com/originals/ce/09/b3/ce09b3dc3bc1ab51293d55b610dc3f22.jpg);
+        background-repeat: repeat;
+        color: #fff;
+        font-family: 'AmongUs';
+        font-size: 30px;
+      }
+      div {
+        color: white;
+        font-family: 'AmongUs';
+        font-size: 30px;
+      }
+}
+
+@media screen {
+    .dropbtn {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 25px;
+        border: none;
+        background-color: #000;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+        margin: 0;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+      }
+      .dropdown-content a {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 25px;
+      }
+      .dropdown-content a:hover {
+        font-size: 30px;
+        color: white;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+        font-size: 30px;
+      }
+      .dropdown:hover .dropbtn {
+        font-size: 30px;
+        color: white;
+      }
+      .grid {
+        display: -ms-grid;
+        display: grid;
+      }
+      header {
+        padding: 30px 0;
+        font-family: 'AmongUs';
+      }
+      header h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 50px;
+      }
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0 0;
+      }
+      header ul li {
+        margin-right: 30px;
+        float: left;
+        font-size: 25px;
+      }
+      header a {
+        color: rgba(255, 255, 255, 0.8);
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+      }
+      header a:hover, header header a:focus {
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      header h1 a:hover, header header h1 a:focus {
+        color: #fff;
+        font-size: 55px;
+        text-decoration: none;
+      }
+      header .secondNav ul li {
+        float: right;
+      }
+      header .logo {
+        width: 200px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+      }
+      img{
+          min-height: 100%;
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+      }
+}
