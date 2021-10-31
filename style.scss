@@ -486,10 +486,10 @@
           &.wrapper{
             padding: 80px 110px;
           }
-          form{
+          & form{
             padding: 10px;
           }
-          input{
+          & input{
             color: white;
             font-family: "Alegreya Sans Thin", sans-serif;
             padding: 5px 10px;
@@ -544,11 +544,11 @@
             }
           }
 
-          li {
+          & li {
             display: inline-block;
             margin-right: 20px;
             
-            a{
+            & a{
               color: rgba(255, 255, 255, 0.8);
               transition: all .3s ease-in-out;
             }
@@ -567,14 +567,14 @@
           .logoli{
             float: right;
           }
-          hr{
+          & hr{
             border: 1px solid rgba(255, 255, 255, 0.8);
 
           }
           #social {width: 200px; height: 52px; margin-bottom: 15px; background: url(./i/social-media-icons.png)  top left no-repeat;}
           #social a {display: inline-block; margin-right: 10px; width: 50px; height: 50px;}
           }
-          p{
+          & p{
             font-size: 20px;
           }
           .firstHalf{
@@ -626,7 +626,7 @@
         .newsCards{
           flex-wrap: wrap;
         }
-        .news .piece{
+        .piece{
           width: 40%;
         }
 
