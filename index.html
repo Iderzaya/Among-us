@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Among Us</title>
     <script src="myScript.js"></script>
+    <script src="https://kit.fontawesome.com/7c3070b180.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
@@ -22,62 +26,65 @@
 
         <div class="row">
 
-            <div class="d-md-block col-md-5 col-lg-5">
+          <div class="d-md-block col-md-3 col-lg-3">
 
-                <nav>
+              <a href="index.html"><img class="logo" src="i/logo.png"/></a>
 
+          </div>
+
+          <div class="d-md-block col-md-6 col-lg-6">
+
+              <nav class="navbar navbar-expand-lg" aria-label="Primary website navigation">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars fa-2x"></i>
+                  </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="primaryNav">
+
+                    <ul class="navbar-nav">
+
+                      <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Maps</a></li>
+                    
+                    <li class="nav-item"><a href="news.html">News</a></li>
+                    <li class="nav-item"><a href="character.html">Character</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="article.html">Contacts</a></li>
+
+                      </ul>
+                    </div>
+                </nav>
+                </div>
+
+                <div class="d-md-block col-md-3 col-lg-3">
+                  <nav>
                     <ul>
-
-                        <li><a href="#">Home</a></li>
-                        <li>
-                          <div class="dropdown">
-                            <button class="dropbtn">Download</button>
-                            <div class="dropdown-content">
-                              <a href="#">Playstore</a>
-                              <a href="#">App Store</a>
-                              <a href="#">Steam</a>
-                              <a href="#">Xbox</a>
-                              <a href="#">Play Station</a>
-                              <a href="#">Nintendo</a>
-                              <a href="#">Epic Games</a>
-                              <a href="#">Windows Store</a>
-                            </div>
-                          </div></li>
-                        <li><a href="#">Maps</a></li>
-                        <li><div class="dropdown">
-                          <button class="dropbtn">Community</button>
+                      <li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Download</button>
+                          <div class="dropdown-content">
+                            <a href="#">Playstore</a>
+                            <a href="#">App Store</a>
+                            <a href="#">Steam</a>
+                            <a href="#">Xbox</a>
+                            <a href="#">Play Station</a>
+                            <a href="#">Nintendo</a>
+                            <a href="#">Epic Games</a>
+                            <a href="#">Windows Store</a>
+                          </div>
+                        </div></li>
+                        <li><div class="dropdown"><button class="dropbtn">Community</button>
                           <div class="dropdown-content">
                             <a href="#">Facebook group</a>
                             <a href="#">Discord</a>
                             <a href="#">Instagram</a>
-                          </div>
-                        </div></li>
-
+                          </div></div></li>
                     </ul>
-                </nav>
-            </div>
-
-            <div class="d-md-block col-md-2 col-lg-2">
-
-            <a href="index.html"><img class="logo" src="i/logo.png"/></a>
-
-            </div>
-
-            <div class="d-md-block col-md-5 col-lg-5">
-
-                <nav class="secondNav">
-
-                    <ul>
-
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="character.html">Character</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="article.html">Contacts</a></li>
-
-                    </ul>
-                </nav>
-            </div>
-        </div>
+                  </nav>
+                </div>
     </header>
     <main>
       <div class="headline">
@@ -85,9 +92,10 @@
         <div class="botline"></div>
         <div class="topline"></div>
         <blockquote>"Can you find the impostor?"</blockquote>
-        <a href="#" class="download">Download Now</a>
-        <a href="#" class="learn">Learn More</a>
-          
+        <div class=" pos">
+            <a href="#" class=" download">Download Now</a>
+            <a href="#" class=" learn">Learn More</a>
+        </div>
       </div>
 
       <section class="container-xl news">
@@ -148,9 +156,9 @@
           <div class="col-sm-12 col-md-7 col-lg-7">
 
             <div class="statText">
-              <h1>Create your character</h1>
+              <h1>Characters</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor sem, consequat eget urna nec, fermentum euismod ligula. Quisque non rutrum erat. Nunc vitae purus facilisis, consectetur dui id, luctus arcu. Aliquam erat volutpat. Donec ac tincidunt ante, non porttitor elit. Vestibulum nec ligula maximus.</p>
-              <button>Create</button>
+              <button>Details</button>
             </div>
 
         </div>
@@ -158,16 +166,16 @@
         </div>
 </main>
 <footer class="grid container-xl">
-  <div class="menu">
+  <div class="menu ">
     <nav>
       <ul class="list-inline">
 
+        <li class="logoli"><a href="index.html"><img class="logo" src="i/logo.png"/></a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Download</a></li>
         <li><a href="#">Maps</a></li>
         <li><a href="#">About Us</a></li>
-        <li class="logoli"><a href="index.html"><img class="logo" src="i/logo.png"/></a></li>
-
+        
     </ul>
     </nav>
     <hr>
