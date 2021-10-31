@@ -472,6 +472,10 @@
           }
         }
       }
+
+      footer form{
+        padding: 10px;
+      }
   
         footer{
 
@@ -486,8 +490,7 @@
           &.wrapper{
             padding: 80px 110px;
           }
-          & form{
-            padding: 10px;
+
           }
           & input{
             color: white;
