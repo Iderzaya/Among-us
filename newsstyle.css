@@ -129,11 +129,14 @@
     height: 150px;
     width: 100%;
   }
-      img{
-          min-height: 100%;
-          width: 100%;
-          height: auto;
-          overflow: hidden;
+     .headline img{
+          
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+            filter: brightness(0.4);
       }
       footer form {
         padding: 10px;
