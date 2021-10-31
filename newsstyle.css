@@ -129,15 +129,46 @@
     height: 150px;
     width: 100%;
   }
-     .headline img{
-          
+  .headline {
+    margin: 0px;
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+    -webkit-animation-name: appear;
+            animation-name: appear;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  .headline img {
+    -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-            filter: brightness(0.4);
-      }
+    -webkit-filter: brightness(0.6);
+            filter: brightness(0.6);
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+            filter: brightness(0.6);
+  }
+  .headline blockquote {
+    position: absolute;
+    top: 20%;
+    font-size: 10vw;
+    width: 100%;
+    padding: 0 20%;
+    line-height: 10vw;
+    text-transform: uppercase;
+  }
+
       footer form {
         padding: 10px;
       }
@@ -269,33 +300,22 @@
       .statText p {
         font-size: 15px;
       }
+      footer a {
+        font-size: 20px;
+      }
+      
+      footer li {
+        margin-right: 10px;
+      }
+      
+      .logoli {
+        width: 30%;
+      }
     }
     
-    footer a {
-      font-size: 20px;
-    }
-    
-    footer li {
-      margin-right: 10px;
-    }
-    
-    .logoli {
-      width: 30%;
-    }
+
     
     @media screen and (max-width: 768px) {
-      .map p {
-        font-size: 10px;
-        text-align: center;
-      }
-      .card {
-        width: 30vw;
-        height: 20vh;
-      }
-      .card:hover, .card:focus {
-        width: 32vw;
-        height: 22vh;
-      }
       .logoli {
         width: 100%;
         -webkit-box-align: center;
@@ -309,38 +329,11 @@
       footer ul {
         text-align: center;
       }
-      .newsCards {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-      }
-      .news .piece {
-        width: 40%;
-      }
-      .news .innerText {
-        height: 500px;
-      }
+
     }
     
     @media screen and (max-width: 600px) {
-      footer .grid {
-        -ms-grid-columns: none;
-            grid-template-columns: none;
-      }
-      .news .piece {
-        width: 100%;
-      }
-      .card {
-        width: 30vw;
-        height: 10vh;
-      }
-      .card:hover, .card:focus {
-        width: 32vw;
-        height: 12vh;
-      }
-    }
-      p {
-        font-size: 20px;
-      }
+
       .firstHalf {
         text-align: center;
       }
@@ -364,80 +357,3 @@
           padding-top: 10px;
       }
 }
-
-.headline {
-    margin: 0px;
-    text-align: center;
-    min-height: 100%;
-    position: relative;
-    -webkit-animation-name: appear;
-            animation-name: appear;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  .headline img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    -webkit-filter: brightness(0.6);
-            filter: brightness(0.6);
-  }
-  .headline blockquote {
-    position: absolute;
-    top: 20%;
-    font-size: 10vw;
-    width: 100%;
-    padding: 0 20%;
-    line-height: 10vw;
-    text-transform: uppercase;
-  }
-  .headline .botline {
-    position: absolute;
-    bottom: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-    height: 200px;
-    width: 100%;
-  }
-  .headline .topline {
-    position: absolute;
-    top: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
-    height: 150px;
-    width: 100%;
-  }
-
-@media screen and (max-width: 1010px) {
-    .second {
-      height: auto;
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .logoli {
-      width: 100%;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      text-align: center;
-    }
-    footer ul {
-      text-align: center;
-    }  
-    }
-
-  @media screen and (max-width: 600px) {
-    footer .grid {
-      -ms-grid-columns: none;
-          grid-template-columns: none;
-    }
-    }
