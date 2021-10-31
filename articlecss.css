@@ -126,17 +126,31 @@
             animation-timing-function: ease-in;
   }
   .headline img {
-    
-    width: 1250px;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    right: 5;
-    -webkit-filter: brightness(0.6);
-            filter: brightness(0.6);
+    filter: brightness(0.4);
+
   }
+
+  .pos {
+    position: absolute;
+    bottom: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 100%;
+    display: block;
+  }
+  
   .writer img {
+    width: auto;
     height: 50px;
+    border-radius: 40px;
+
   }
   .headline blockquote {
     position: absolute;
@@ -558,17 +572,40 @@
         text-align: center;
       }
     }
-    @media screen and (max-width: 800px) {
+
+    @media screen and (max-width: 1010px) {
+      .second {
+        height: auto;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 768px) {
     .parent{
         display: grid;
     padding: 20px;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     }
+    .logoli {
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
     }
-@media screen and (max-width: 1010px) {
-  .second {
-    height: auto;
-    width: 100%;
+    footer ul {
+      text-align: center;
+    }  
+    }
+
+
+
+@media screen and (max-width: 600px) {
+  footer .grid {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
   }
 }

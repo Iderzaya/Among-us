@@ -440,7 +440,7 @@
     column-gap: 20px;
     }
     .wrapper {padding: 80px 110px;}
-    
+
     footer .menu {
         padding: 10px;
       }
@@ -546,6 +546,19 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     }
+    .logoli {
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+    }
+    footer ul {
+      text-align: center;
+    }  
     }
     
 @media screen and (max-width: 1010px) {
@@ -554,4 +567,11 @@
     width: 100%;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 600px) {
+footer .grid {
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+}
+}
