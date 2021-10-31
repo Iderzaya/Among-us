@@ -359,6 +359,7 @@
     font-family: "Alegreya Sans Thin", sans-serif;
     font-weight: thin;
     letter-spacing: 0.08em;
+    text-align: center;
   }
   .maps {
     display: -webkit-box;
