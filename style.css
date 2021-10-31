@@ -520,9 +520,6 @@
   footer.wrapper {
     padding: 80px 110px;
   }
-  footer form {
-    padding: 10px;
-  }
   footer input {
     color: white;
     font-family: "Alegreya Sans Thin", sans-serif;
@@ -675,7 +672,7 @@ footer li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .piece {
+  .news .piece {
     width: 40%;
   }
   .news .innerText {
