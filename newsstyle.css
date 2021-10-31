@@ -113,6 +113,22 @@
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
       }
+.botline {
+    position: absolute;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    height: 200px;
+    width: 100%;
+  }
+.topline {
+    position: absolute;
+    top: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+    height: 150px;
+    width: 100%;
+  }
       img{
           min-height: 100%;
           width: 100%;
