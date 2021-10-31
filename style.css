@@ -377,7 +377,6 @@
   .card {
     margin: 0 2vw;
     width: 20vw;
-    min-width: 200px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding: 2vw;
@@ -401,7 +400,6 @@
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     height: 200px;
-    min-height: 190px;
   }
   .card-title {
     -webkit-transition: all .3s ease-in-out;
@@ -617,9 +615,10 @@
   }
   p {
     font-size: 20px;
+    text-align: end;
   }
   .firstHalf {
-    text-align: center;
+    color: white;
   }
 }
 
@@ -653,7 +652,16 @@ footer li {
 
 @media screen and (max-width: 768px) {
   .map p {
-    font-size: 30px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .card {
+    width: 30vw;
+    height: 20vh;
+  }
+  .card:hover, .card:focus {
+    width: 32vw;
+    height: 22vh;
   }
   .logoli {
     width: 100%;
@@ -687,6 +695,14 @@ footer li {
   }
   .news .piece {
     width: 100%;
+  }
+  .card {
+    width: 30vw;
+    height: 10vh;
+  }
+  .card:hover, .card:focus {
+    width: 32vw;
+    height: 12vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
