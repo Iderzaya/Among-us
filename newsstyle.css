@@ -290,3 +290,25 @@
       width: 100%;
     }
   }
+  @media screen and (max-width: 768px) {
+    .logoli {
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+    }
+    footer ul {
+      text-align: center;
+    }  
+    }
+
+  @media screen and (max-width: 600px) {
+    footer .grid {
+      -ms-grid-columns: none;
+          grid-template-columns: none;
+    }
+    }

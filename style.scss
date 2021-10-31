@@ -340,7 +340,6 @@
         .card {
           margin: 0 2vw;
           width: 20vw;
-          min-width: 200px;
           flex-shrink: 0;
           padding: 2vw;
           box-sizing: border-box;
@@ -353,7 +352,6 @@
           box-shadow: 4px 4px 0 rgba(223, 69, 69, 0.1);
           transition: all .3s ease-in-out;
           height: 200px;
-          min-height: 190px;
         
           &-title {
             transition: all .3s ease-in-out;
@@ -578,9 +576,11 @@
           }
           & p{
             font-size: 20px;
+            text-align: end;
           }
           .firstHalf{
-            text-align: center;
+            color: white;
+
           }
   }
   
@@ -613,8 +613,18 @@
       }
 @media screen and (max-width:768px){
         .map p{
-          font-size: 30px;
+          font-size: 10px;
+          text-align: center;
         }
+
+        .card{
+          width: 30vw;
+          height: 20vh;
+          &:hover, &:focus{
+            width: 32vw;
+            height: 22vh;
+        }
+      }
         .logoli{
           width: 100%;
           align-items: center;
@@ -644,4 +654,13 @@
         .news .piece{
           width: 100%;
         }
+
+        .card{
+          width: 30vw;
+          height: 10vh;
+          &:hover, &:focus{
+            width: 32vw;
+            height: 12vh;
+        }
+      }
 }
