@@ -20,6 +20,54 @@
 }
 
 @media screen {
+  .dropbtn {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    border: none;
+    background-color: #000;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .dropdown-content a {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+  }
+  .dropdown-content a:hover {
+    font-size: 30px;
+    color: white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    font-size: 30px;
+  }
+  .dropdown:hover .dropbtn {
+    font-size: 30px;
+    color: white;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
   header {
     padding: 30px 0;
     font-family: 'AmongUs';
@@ -35,14 +83,14 @@
     padding: 10px 0 0;
   }
   header ul li {
-    margin-right: 30px;
+    margin-left: 5%;
     float: left;
     font-size: 25px;
   }
   header a {
     color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   header a:hover, header header a:focus {
     color: #fff;
@@ -54,16 +102,15 @@
     font-size: 55px;
     text-decoration: none;
   }
-  header .secondNav ul li {
-    float: right;
-  }
   header .logo {
     width: 200px;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+  }
+  header .navbar-toggler-icon {
+    color: #fff;
+  }
+  header .navbar-nav {
+    width: 100%;
   }
   .headline {
     margin: 0px;
@@ -393,6 +440,7 @@
     column-gap: 20px;
     }
     .wrapper {padding: 80px 110px;}
+    
     footer .menu {
         padding: 10px;
       }
