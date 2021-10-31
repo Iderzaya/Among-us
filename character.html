@@ -1,9 +1,131 @@
 <!DOCTYPE html>
 <head>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Among Us</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="characterstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <style>
+        @font-face {
+            font-family: "AmongUs"; 
+            src: url(in-your-face-joffrey/In\ your\ face\,\ joffrey!.ttf); 
+        }
+    </style>
 </head>
 <body>
-<div>
-    
-</div>
+    <header class="container-xl">
+
+        <div class="row">
+
+            <div class="d-md-block col-md-5 col-lg-5">
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+                        <li>
+                          <div class="dropdown">
+                            <button class="dropbtn">Download</button>
+                            <div class="dropdown-content">
+                              <a href="#">Playstore</a>
+                              <a href="#">App Store</a>
+                              <a href="#">Steam</a>
+                              <a href="#">Xbox</a>
+                              <a href="#">Play Station</a>
+                              <a href="#">Nintendo</a>
+                              <a href="#">Epic Games</a>
+                              <a href="#">Windows Store</a>
+                            </div>
+                          </div></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><div class="dropdown">
+                          <button class="dropbtn">Community</button>
+                          <div class="dropdown-content">
+                            <a href="#">Facebook group</a>
+                            <a href="#">Discord</a>
+                            <a href="#">Instagram</a>
+                          </div>
+                        </div></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="d-md-block col-md-2 col-lg-2">
+
+            <a href="index.html"><img class="logo" src="i/logo.png"/></a>
+
+            </div>
+
+            <div class="d-md-block col-md-5 col-lg-5">
+
+                <nav class="secondNav">
+
+                    <ul>
+
+                        <li><a href="#">News</a></li>
+                        <li><a href="character.html">Character</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="article.html">Contacts</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-xl">
+            <div class="row">
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6">
+                    <img src="i/crew.jpg">
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6">
+                    <img src="i/imposter.png">
+                </div>
+            </div>
+    </div>
+</main>
+<footer class="grid container-xl">
+    <div class="menu">
+      <nav>
+        <ul class="list-inline">
+  
+          <li><a href="#">News</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Maps</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="logoli"><a href="index.html"><img class="logo" src="i/logo.png"/></a></li>
+  
+      </ul>
+      </nav>
+      <hr>
+      <div class="firstHalf">
+        <div id="social">
+          <a id="ig" href="https://instagram.com" aria-label="Follow us on Instagram"></a>
+          <a id="tw" href="https://twitter.com" aria-label="Follow us on Twitter"></a> 
+          <a id="fb" href="https://facebook.com" aria-label="Follow us on Facebook"></a>
+        </div>
+        <p role="contentinfo">All content &copy; Among Us</p>
+      </div>
+      </div>
+    </div>
+    <form action="#" method="post" class="grid">
+      <input class="formName" type="text" aria-label="Enter your name" placeholder="Your Name">
+      <input class="formMail" type="email" aria-label="Enter your email address" placeholder="Your Email Address">
+      <input class="formFeedback" type="text" aria-label="Enter your feedback" placeholder="Feedback">
+      <input class="submit" type="submit" id="submit_feedback" values="Submit">
+    </form>
+  </footer>
 </body>

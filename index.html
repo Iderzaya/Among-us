@@ -28,10 +28,30 @@
 
                     <ul>
 
-                        <li><a href="#">The Skeld</a></li>
-                        <li><a href="#">Mira HQ</a></li>
-                        <li><a href="#">Polus</a></li>
-                        <li><a href="#">The Airship</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                          <div class="dropdown">
+                            <button class="dropbtn">Download</button>
+                            <div class="dropdown-content">
+                              <a href="#">Playstore</a>
+                              <a href="#">App Store</a>
+                              <a href="#">Steam</a>
+                              <a href="#">Xbox</a>
+                              <a href="#">Play Station</a>
+                              <a href="#">Nintendo</a>
+                              <a href="#">Epic Games</a>
+                              <a href="#">Windows Store</a>
+                            </div>
+                          </div></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><div class="dropdown">
+                          <button class="dropbtn">Community</button>
+                          <div class="dropdown-content">
+                            <a href="#">Facebook group</a>
+                            <a href="#">Discord</a>
+                            <a href="#">Instagram</a>
+                          </div>
+                        </div></li>
 
                     </ul>
                 </nav>
@@ -39,7 +59,7 @@
 
             <div class="d-md-block col-md-2 col-lg-2">
 
-            <a href="#"><img class="logo" src="i/logo.png"/></a>
+            <a href="index.html"><img class="logo" src="i/logo.png"/></a>
 
             </div>
 
@@ -49,10 +69,10 @@
 
                     <ul>
 
-                        <li><a href="article.html">Contact</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="character.html">Character</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Character</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="article.html">Contacts</a></li>
 
                     </ul>
                 </nav>
@@ -71,43 +91,25 @@
       </div>
 
       <section class="container-xl news">
-
-        <div class="col-12">
-        <p>Latest news & announcements</p>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-3 piece">
-          <img src="i/toast.jpeg" alt="1">
-          <div class="inneText">
-            <span>June 10, 2021</span>
-            <title>Has Disguised Toast quit?</title>
+        <div class="title"><p>Latest news & announcements</p></div>
+        <div class="newsCards">
+          <div class="piece">
+            <picture><img src="i/toast.jpeg" alt="1"></picture>
+            <div class="innerText"><span>Has Disguised Toast quit Among Us?</span></div>
+          </div>
+          <div class="piece">
+            <picture><img src="i/valkyrae.jpg" alt="1"></picture>
+            <div class="innerText"><span>Is Valkyrie still playing?</span></div>
+          </div>
+          <div class="piece">
+            <picture><img src="i/corpse.jpeg" alt="1"></picture>
+            <div class="innerText"><span>Corpse face reveal</span></div>
+          </div>
+          <div class="piece">
+            <picture><img src="i/leslie.jpeg" alt="1"></picture>
+            <div class="innerText"><span>Cute Leslie</span></div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3 piece">
-          <img src="i/toast.jpeg" alt="1">
-          <div class="inneText">
-            <span>June 10, 2021</span>
-            <title>Has Disguised Toast quit?</title>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-3 piece">
-          <img src="i/toast.jpeg" alt="1">
-          <div class="inneText">
-            <span>June 10, 2021</span>
-            <title>Has Disguised Toast quit?</title>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-3 piece">
-          <img src="i/toast.jpeg" alt="1">
-          <div class="inneText">
-            <span>June 10, 2021</span>
-            <title>Has Disguised Toast quit?</title>
-          </div>
-        </div>
-      </div>
-
-
       </section>
 
 
@@ -141,7 +143,6 @@
         <div class="statistics row">
 
           <div class="col-sm-12 col-md-5 col-lg-5">
-
             <img src="i/skin.jpeg">
           </div>
           <div class="col-sm-12 col-md-7 col-lg-7">
@@ -155,10 +156,36 @@
         </div>
         </div>
         </div>
-
-        <div class="airship">
-          
-        </div>
 </main>
+<footer class="grid container-xl">
+  <div class="menu">
+    <nav>
+      <ul class="list-inline">
 
+        <li><a href="#">News</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Maps</a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="logoli"><a href="index.html"><img class="logo" src="i/logo.png"/></a></li>
+
+    </ul>
+    </nav>
+    <hr>
+    <div class="firstHalf">
+      <div id="social">
+        <a id="ig" href="https://instagram.com" aria-label="Follow us on Instagram"></a>
+        <a id="tw" href="https://twitter.com" aria-label="Follow us on Twitter"></a> 
+        <a id="fb" href="https://facebook.com" aria-label="Follow us on Facebook"></a>
+      </div>
+      <p role="contentinfo">All content &copy; Among Us</p>
+    </div>
+    </div>
+  </div>
+  <form action="#" method="post" class="grid">
+    <input class="formName" type="text" aria-label="Enter your name" placeholder="Your Name">
+    <input class="formMail" type="email" aria-label="Enter your email address" placeholder="Your Email Address">
+    <input class="formFeedback" type="text" aria-label="Enter your feedback" placeholder="Feedback">
+    <input class="submit" type="submit" id="submit_feedback" values="Submit">
+  </form>
+</footer>
 </body>
