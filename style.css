@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
 @media all {
-    header,main {
+    main {
         display: block
     }
 
@@ -9,7 +9,7 @@
         margin: 0;
         padding: 0;
         background-image: url(https://i.pinimg.com/originals/ce/09/b3/ce09b3dc3bc1ab51293d55b610dc3f22.jpg);
-        background-repeat: repeat
+        background-repeat: repeat;
     }
 
     body,div {
@@ -75,10 +75,6 @@
         color: #fff
     }
 
-    header .navbar-nav {
-        width: 100%
-    }
-
     .headline {
         margin: 0;
         text-align: center;
@@ -88,6 +84,7 @@
         animation-duration: 3s;
         animation-timing-function: ease-in
     }
+    @keyframes appear {0% {opacity: 0} to {opacity: 1}}
 
     .headline img {
         object-fit: cover;
@@ -158,19 +155,9 @@
         border-width: 3px
     }
 
-@keyframes appear {
-    0% {
-        opacity: 0
-    }
 
-    to {
-        opacity: 1
-    }
-}
 
 .news,.news picture {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex
 }
 
