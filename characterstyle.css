@@ -1,235 +1,236 @@
-@import url("https://fonts.googleapis.com/css?family=Space+Mono");
-@media all{
-    header, main {
-        display: block;
-      }
-      body {
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+
+@media all {
+    main {
+        display: block
+    }
+
+    body {
         margin: 0;
         padding: 0;
         background-image: url(https://i.pinimg.com/originals/ce/09/b3/ce09b3dc3bc1ab51293d55b610dc3f22.jpg);
         background-repeat: repeat;
+    }
+
+    body,div {
         color: #fff;
         font-family: 'AmongUs';
-        font-size: 30px;
+        font-size: 30px
+    }
+}   
+      video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
       }
-      div {
-        color: white;
-        font-family: 'AmongUs';
-        font-size: 30px;
+      .dropdown-item, .dropdown-menu, .nav-link{
+        background-color: rgba(0,0,0,.7) !important;
+        text-align: end !important;
       }
-}
+      .grid {
+        display: grid
+        }
 
-@media screen {
-  .dropbtn {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 25px;
-    border: none;
-    background-color: #000;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    margin: 0;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-  .dropdown-content a {
-    color: rgba(255, 255, 255, 0.8);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 25px;
-  }
-  .dropdown-content a:hover {
-    font-size: 30px;
-    color: white;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-    font-size: 30px;
-  }
-  .dropdown:hover .dropbtn {
-    font-size: 30px;
-    color: white;
-  }
-  .grid {
-    display: -ms-grid;
-    display: grid;
-  }
-  header {
-    padding: 30px 0;
-    font-family: 'AmongUs';
-  }
-  header h1 {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 50px;
-  }
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px 0 0;
-  }
-  header ul li {
-    margin-left: 5%;
-    float: left;
-    font-size: 25px;
-  }
-  header a {
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-  header a:hover, header header a:focus {
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-  }
-  header h1 a:hover, header header h1 a:focus {
-    color: #fff;
-    font-size: 55px;
-    text-decoration: none;
-  }
-  header .logo {
-    width: 200px;
-    margin: 0;
-  }
-  header .navbar-toggler-icon {
-    color: #fff;
-  }
-  header .navbar-nav {
-    width: 100%;
-  }
-      img{
-          min-height: 100%;
+        img{
           width: 100%;
+          object-fit: cover;
           height: auto;
           overflow: hidden;
+        }
+      header {
+            background-color: black;
+            padding: 30px 0 0;
+        }
+
+      .navbar-nav .nav-link{
+          margin-left: 1.6vw;
+        }
+      .dropdown-toggle, footer li a,header a, ul li:hover{
+          transition: 0.3s ease-in-out;
+        }
+        
+      footer li a,header a, .dropdown-item {
+            color: rgba(255,255,255,0.8) !important;
+        }
+      footer li a:hover, footer li a:focus,header a:hover,header a:focus, .dropdown-item:hover, .dropdown-item:focus {
+            color: #fff !important;
+            font-size: 31px !important;
+            text-decoration: none 
       }
-      footer form {
-        padding: 10px;
-      }
-      footer .menu {
-        padding: 10px;
-      }
-      footer.grid {
-        -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-      }
-      footer.wrapper {
-        padding: 80px 110px;
-      }
-      footer input {
-        color: white;
-        font-family: "Alegreya Sans Thin", sans-serif;
-        padding: 5px 10px;
-      }
-      footer form.grid {
-            grid-template-areas: "nm em" "fd fd";
-        -ms-grid-rows: 1fr 3fr;
-            grid-template-rows: 1fr 3fr;
-        -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-      }
-      footer .formName {
-        background-color: #000;
-        margin: 5px;
-        border: 1px solid white;
-        border-radius: 5px;
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-        grid-area: nm;
-      }
-      footer .formMail {
-        background-color: #000;
-        margin: 5px;
-        -ms-grid-row: 1;
-        -ms-grid-column: 2;
-        grid-area: em;
-        border: 1px solid white;
-        border-radius: 5px;
-      }
-      footer .formFeedback {
-        background-color: #000;
-        margin: 5px;
-        -ms-grid-row: 2;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
-        grid-area: fd;
-        border: 1px solid white;
-        border-radius: 5px;
-      }
-      footer .submit {
-        background-color: white;
-        margin: 5px;
-        border: 1px solid white;
-        border-radius: 5px;
-        color: #000;
-        border-radius: 10px;
-        border: solid 2px white;
-        background-clip: content-box;
-        background-color: white;
-        font-family: 'AmongUs';
-        text-align: center;
-        font-size: 20px;
-      }
-      footer .submit:hover, footer .submit:focus {
-        -webkit-text-decoration-color: white;
-                text-decoration-color: white;
-        border-color: #03AC13;
-      }
-      footer li {
-        display: inline-block;
-        margin-right: 20px;
-      }
-      footer li a {
-        color: rgba(255, 255, 255, 0.8);
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-      }
-      footer li a:hover, footer li a:focus {
-        color: #fff;
-        font-size: 30px;
-        text-decoration: none;
-      }
-      footer li .logo {
-        height: 30px;
-        width: 120px;
-      }
-      footer .logoli {
-        float: right;
-      }
-      footer hr {
-        border: 1px solid rgba(255, 255, 255, 0.8);
-      }
-      footer #social {
-        width: 200px;
-        height: 52px;
-        margin-bottom: 15px;
-        background: url(./i/social-media-icons.png) top left no-repeat;
-      }
-      footer #social a {
-        display: inline-block;
-        margin-right: 10px;
-        width: 50px;
-        height: 50px;
+
+      header .logo {
+            width: 200px;
+            margin: 0
+        }
+
+      header .navbar-toggler-icon {
+            color: #fff
+        }
+
+      main .row{
+        margin: 30px 0;
       }
       p {
         font-size: 20px;
+        font-family: "Alegreya Sans Thin",sans-serif;
       }
+
+      footer .menu,footer form {
+        padding: 10px
+      }
+      
+      footer form.grid,footer.grid {
+          grid-template-columns: 1fr 1fr
+      }
+      
+      footer.wrapper {
+          padding: 80px 110px
+      }
+      
+      footer input {
+          color: #fff;
+          font-family: "Alegreya Sans Thin",sans-serif;
+          padding: 5px 10px
+      }
+      
+      footer form.grid {
+          grid-template-areas: "nm em" "fd fd";
+          -ms-grid-rows: 1fr 3fr;
+          grid-template-rows: 1fr 3fr
+      }
+      
+      footer .formFeedback,footer .formMail,footer .formName {
+          background-color: #000;
+          margin: 5px;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          grid-area: nm
+      }
+      
+      footer .formFeedback,footer .formMail {
+          grid-area: em
+      }
+      
+      footer .formFeedback {
+          grid-area: fd
+      }
+      
+      footer .submit {
+          margin: 5px;
+          color: #000;
+          border-radius: 10px;
+          border: solid 2px #fff;
+          background-clip: content-box;
+          background-color: #fff;
+          font-family: 'AmongUs';
+          text-align: center;
+          font-size: 20px
+      }
+      
+      footer li {
+          display: inline-block;
+          margin-right: 20px
+      }
+      
+      footer li a:focus,footer li a:hover {
+          color: #fff;
+          font-size: 30px;
+          text-decoration: none
+      }
+      
+      footer li .logo {
+          height: 30px;
+          width: 120px
+      }
+      
+      footer .logoli {
+          float: right
+      }
+      
+      footer hr {
+          border: 1px solid rgba(255,255,255,0.8)
+      }
+      
+      footer #social {
+          width: 200px;
+          height: 52px;
+          margin-bottom: 15px;
+          background: url(./i/social-media-icons.png) top left no-repeat
+      }
+      
+      footer #social a {
+          display: inline-block;
+          margin-right: 10px;
+          width: 50px;
+          height: 50px
+      }
+      footer p {
+          font-size: 20px;
+          text-align: end
+      }
+      
       .firstHalf {
-        text-align: center;
+          color: #fff
       }
-}
+
+@media screen and (max-width:992px) {
+
+      header{
+        padding: 20px 0 0;
+      }
+      footer a {
+        font-size: 20px
+      }
+      
+      footer li {
+          margin-right: 10px
+      }
+      
+      .logoli {
+          width: 30%
+      }
+    }
+    
+    @media screen and (max-width:768px) {
+        .logoli {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        
+        .logoli,footer ul {
+            text-align: center;
+      }
+
+      #first{
+        order: 1;
+      }
+      #second{
+        order: 2;
+      }
+      #third{
+        order: 3;
+      }
+      #fourth{
+        order: 4;
+      }
+      
+  }
+    @media screen and (max-width:600px) {
+    
+      footer.grid {
+        grid-template-columns: none;
+  }
+  p{
+    font-size: 15px;
+  }
+
+  h2{
+    font-size: 1.5rem !important;
+  }
+    }
