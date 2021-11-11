@@ -22,69 +22,47 @@
 
 
 <body>
-    <header class="container-xl">
+    <header class="container-xl" >
+      <nav class="navbar navbar-expand-lg navbar-fixed-top" aria-label="Primary website navigation">
 
-        <div class="row">
+        <a href="index.html"><img class="logo" src="i/logo.png"/></a>
 
-          <div class="d-md-block col-md-3 col-lg-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
 
-              <a href="index.html"><img class="logo" src="i/logo.png"/></a>
-
-          </div>
-
-          <div class="d-md-block col-md-6 col-lg-6">
-
-              <nav class="navbar navbar-expand-lg" aria-label="Primary website navigation">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars fa-2x"></i>
-                  </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="primaryNav">
-
-                    <ul class="navbar-nav">
-
-                      <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">Maps</a></li>
-                    
-                    <li class="nav-item"><a href="news.html">News</a></li>
-                    <li class="nav-item"><a href="character.html">Character</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item"><a href="article.html">Contacts</a></li>
-
-                      </ul>
-                    </div>
-                </nav>
-                </div>
-
-                <div class="d-md-block col-md-3 col-lg-3">
-                  <nav>
-                    <ul>
-                      <li>
-                        <div class="dropdown">
-                          <button class="dropbtn">Download</button>
-                          <div class="dropdown-content">
-                            <a href="#">Playstore</a>
-                            <a href="#">App Store</a>
-                            <a href="#">Steam</a>
-                            <a href="#">Xbox</a>
-                            <a href="#">Play Station</a>
-                            <a href="#">Nintendo</a>
-                            <a href="#">Epic Games</a>
-                            <a href="#">Windows Store</a>
-                          </div>
-                        </div></li>
-                        <li><div class="dropdown"><button class="dropbtn">Community</button>
-                          <div class="dropdown-content">
-                            <a href="#">Facebook group</a>
-                            <a href="#">Discord</a>
-                            <a href="#">Instagram</a>
-                          </div></div></li>
-                    </ul>
-                  </nav>
-                </div>
+        <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Maps</a></li>
+                <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link active" href="character.html">Character</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="article.html">Contacts</a></li></ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+                  <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-content">
+                      <a href="#"class="dropdown-item">Playstore</a>
+                      <a href="#"class="dropdown-item">App Store</a>
+                      <a href="#"class="dropdown-item">Steam</a>
+                      <a href="#"class="dropdown-item">Xbox</a>
+                      <a href="#"class="dropdown-item">Play Station</a>
+                      <a href="#"class="dropdown-item">Nintendo</a>
+                      <a href="#"class="dropdown-item">Epic Games</a>
+                      <a href="#"class="dropdown-item">Windows Store</a>
+                    </div></div></li>
+              </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-content">
+                    <a href="#"class="dropdown-item">Facebook group</a>
+                    <a href="#"class="dropdown-item">Discord</a>
+                    <a href="#"class="dropdown-item">Instagram</a></div></div></li>
+              </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="headline">
