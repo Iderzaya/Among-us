@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <script src="myScript.js"></script>
+    <script type="module" src="./public/javascripts/mainNews.js"></script>
+    <!--<script type="module" src="./public/javascripts/module/moduleNews.js"></script>-->
     <script src="https://kit.fontawesome.com/7c3070b180.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -96,32 +97,7 @@
             <div class="title">
                 <p>More to explore</p>
             </div>
-            <section class="grid" id="news">
-                <div>
-                    <p class="ctr">
-                        <a href="article.html"><img src="./public/images/SHAPESHIFTERTEASER.png"></a>
-                    </p>
-                    <h2>Role Peek: The Shapeshifter</h2>
-                    <p id="author">By Khosoo</p>
-                </div>
-
-                <div>
-                    <p>
-                        <a href="article.html"><img src="./public/images/promo_XBOX_PS.png"></a>
-                    </p>
-                    <h2>Xbox & PlayStation launch on Dec 14!🚀</h2>
-                    <p id="author">By Khosoo</p>
-                </div>
-
-                <div>
-                    <p>
-                        <a href="article.html"><img src="./public/images/emergency meeting.png"></a>
-                    </p>
-                    <h2>Emergency Meeting #32: Server Issues & Upcoming Roles</h2>
-                    <p id="author">By Khosoo</p>
-                </div>
-
-            </section>
+            <section class="grid" id="newsAll"></section>
         </div>
     </main>
     <footer class="grid container-xl">
