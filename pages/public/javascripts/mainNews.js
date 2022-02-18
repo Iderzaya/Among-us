@@ -7,7 +7,7 @@ getPost(postUrl,
 
         let retHtml = "";
         newslist.forEach(element => {
-            retHtml += News.News(element.title, element.author, element.image).CreateHtml();
+            retHtml += News.News(element.id, element.title, element.image, element.authorImage, element.author, element.post).CreateHtml();
 
         });
         document.getElementById("newsAll").innerHTML = retHtml;

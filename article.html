@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Among Us</title>
-    <script type="module" src="./public/javascripts/mainIndex.js"></script>
+    <title>Article</title>
+    <script type="module" src="./public/javascripts/mainArticle.js"></script>
     <script src="https://kit.fontawesome.com/7c3070b180.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./public/css/indexstyle.css">
-    <link rel="manifest" href="./public/json/manifest.json">
+    <link rel="stylesheet" href="./public/css/articlecss.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -22,8 +21,8 @@
     </style>
 </head>
 
-
 <body>
+    <video playsinline autoplay muted loop id="bgvid"><source src="./public/images/stars.mp4" type="video/mp4"></video>
     <header class="container-xl">
         <nav class="navbar navbar-expand-lg navbar-fixed-top" aria-label="Primary website navigation">
 
@@ -32,15 +31,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
 
             <div class="collapse navbar-collapse" id="primaryNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="index.html">Maps</a></li>
                     <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link active" href="character.html">Character</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="article.html">Contacts</a></li>
                 </ul>
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
                         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
@@ -71,90 +70,35 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="headline">
-            <img src="./public/images/b1.jpeg">
+    <main id="main">
+        <!-- <div class="headline">
+            <img src="./public/images/new.jfif">
             <div class="botline"></div>
             <div class="topline"></div>
-            <blockquote>"Can you find the impostor?"</blockquote>
-            <div class=" pos">
-                <a href="#" class="download">Download Now</a>
-                <a href="#" class="learn">Learn More</a>
-            </div>
+            <blockquote>The most viewed YOUTUBE AMONG US VIDEO</blockquote>
+            <h1 class="pos">News</h1>
         </div>
-
-        <section class="container-xl news">
+        <section class="container-xl">
             <video playsinline autoplay muted loop id="bgvid">
-                <source src="./public/images/stars.mp4" type="video/mp4">
-            </video>
-            <div class="title">
-                <p>Latest news & announcements</p>
+              <source src="./public/images/stars.mp4" type="video/mp4">
+          </video>
+            <div class="text">
+                <p>The eighth Harry Potter story will continue in London within its two-part structure (in the North American productions, the play is being reimagined as a one-part experience) and is celebrating its big return with gorgeous new poster artwork.
+                    You can learn all about the artwork’s evolution here.</p>
+                <p>Reopening the West End production are Jamie Ballard as Harry Potter, Susie Trayling as Ginny Potter, Dominic Short as Albus Potter, Thomas Aldridge as Ron Weasley, Michelle Gayle as Hermione Granger, Phoenix Edwards as Rose Granger-Weasley,
+                    James Howard as Draco Malfoy, and Luke Sumner as Scorpius Malfoy.</p>
+                <p>The ensemble includes Lola Adaja, Samson Ajewole, David Annen, Valerie Antwi, Sue Appleby, Phil Cheadle, Craig Connolly, Robert Curtis, Tim Dewberry, Jim Fish, Thomas Gilbey, Jemma Gould, Rachel Hinds, Jordan Lang, Ronnie Lee, Katrina
+                    Lopes, Lucy Mangan, David Mara, Lucia McAnespie, Jayne McKenna, Kathryn Meisle, Gordon Millar, Ian Redford, Thomas Royal, Tom Sturgess, Joshua Talbot, Mark Theodore, Emma-May Uden, Madeleine Walker, and Wreh-asha Walton.</p>
+                <p>Seven children—Noah Alexander, Tom Quinn Alexander, Abby Barnes, Harley Barton, Chase Collard, Samuel Newby, and Cici Smith—alternate in two roles.</p>
+                <p>Welcome back, everyone!</p>
+                <p>You can learn more about the Harry Potter and the Cursed Child play in London via the official website.</p>
             </div>
-            <div class="newsCards">
-                <!-- <div class="piece">
-                    <picture><img src="./public/images/toast.jpeg" alt="1"></picture>
-                    <div class="innerText"><span>Has Disguised Toast quit Among Us?</span></div>
-                </div>
-                <div class="piece">
-                    <picture><img src="./public/images/valkyrae.jpg" alt="1"></picture>
-                    <div class="innerText"><span>Is Valkyrie still playing?</span></div>
-                </div>
-                <div class="piece">
-                    <picture><img src="./public/images/corpse.jpeg" alt="1"></picture>
-                    <div class="innerText"><span>Corpse face reveal</span></div>
-                </div>
-                <div class="piece">
-                    <picture><img src="./public/images/leslie.jpeg" alt="1"></picture>
-                    <div class="innerText"><span>Cute Leslie</span></div>
-                </div> -->
+            <div class="writer grid">
+                <div class="profile"><img class="zaya" src="./public/images/zaya.jfif"></div>
+                <h6>Written by</h6>
+                <b>Iderzaya</b>
             </div>
-        </section>
-
-
-        <div class="container-xl map">
-            <span>Choose your</span>
-            <strong>MAP</strong>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat erat non eleifend varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-            <div class="maps">
-
-                <div class="card card.isVisible">
-                    <img src="./public/images/skeld.jpg" />
-                    <h2 class="card-title">The Skeld</h2>
-                </div>
-                <div class="card card.isVisible">
-                    <img src="./public/images/mira.jpg" />
-                    <h2 class="card-title">Mira HQ</h2>
-                </div>
-                <div class="card card.isVisible">
-                    <img src="./public/images/polus.jpg" />
-                    <h2 class="card-title">Polus</h2>
-                </div>
-                <div class="card card.isVisible">
-                    <img src="./public/images/airship.jpg" />
-                    <h2 class="card-title">The Airship</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-xl">
-
-            <div class="statistics row">
-
-                <div class="col-sm-12 col-md-5 col-lg-5">
-                    <img src="./public/images/skin.jpeg">
-                </div>
-                <div class="col-sm-12 col-md-7 col-lg-7">
-
-                    <div class="statText">
-                        <h1>Characters</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor sem, consequat eget urna nec, fermentum euismod ligula. Quisque non rutrum erat. Nunc vitae purus facilisis, consectetur dui id, luctus arcu. Aliquam erat volutpat.
-                            Donec ac tincidunt ante, non porttitor elit. Vestibulum nec ligula maximus.</p>
-                        <button>Details</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        </section> -->
     </main>
     <footer class="grid container-xl">
         <div class="menu ">
