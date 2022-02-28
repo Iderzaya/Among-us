@@ -29,22 +29,22 @@ export let News = {
     CreateHtmlArticle() {
 
         let returnHtml = "";
-        returnHtml += '\
-        <div class="headline">\
-            <img src=' + this.image + '>\
-            <div class="botline"></div>\
-            <div class="topline"></div>\
-            <blockquote>' + this.title + '</blockquote>\
-            <h1 class="pos">News</h1>\
-        </div>\
-        <section class="container-xl">\
-            <div class="text">' + this.post + '</div>\
-            <div class="writer grid">\
-                <div class="profile"><img class="zaya" src=' + this.authorImage + '></div>\
-                <h6>Written by</h6>\
-                <b>' + this.author + '</b>\
-            </div>\
-        </section>';
+        returnHtml += `
+        <div class="headline">
+            <img src= ${this.image}>
+            <div class="botline"></div>
+            <div class="topline"></div>
+            <blockquote>${this.title}</blockquote>
+            <h1 class="pos">News</h1>
+        </div>
+        <section class="container-xl">
+            <div class="text">${this.post}</div>
+            <div class="writer grid">
+                <div class="profile"><img class="zaya" src= ${this.authorImage}></div>
+                <h6>Written by</h6>
+                <b>${this.author}</b>
+            </div>
+        </section>`;
         return returnHtml;
     },
 }

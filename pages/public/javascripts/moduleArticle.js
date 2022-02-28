@@ -9,24 +9,24 @@ export let News = {
     },
     CreateHtml() {
         let returnHtml = "";
-        returnHtml += '\
-            <img src=' + this.image + '>\
-            <div class="botline"></div>\
-            <div class="topline"></div>\
-            <blockquote>' + this.title + '</blockquote>\
-            <h1 class="pos">News</h1>\
-        </div>\
-        <section class="container-xl">\
-            <video playsinline autoplay muted loop id="bgvid">\
-              <source src="./public/images/stars.mp4" type="video/mp4">\
-          </video>\
-            <div class="text">' + this.post + '</div>\
-            <div class="writer grid">\
-                <div class="profile"><img class="zaya" src=' + this.authorImage + '></div>\
-                <h6>Written by</h6>\
-                <b>' + this.author + '</b>\
-            </div>\
-        </section>';
+        returnHtml += `
+            <img src=${this.image}>
+            <div class="botline"></div>
+            <div class="topline"></div>
+            <blockquote>${this.title}</blockquote>
+            <h1 class="pos">News</h1>
+        </div>
+        <section class="container-xl">
+            <video playsinline autoplay muted loop id="bgvid">
+              <source src="./public/images/stars.mp4" type="video/mp4">
+          </video>
+            <div class="text">${this.post}</div>
+            <div class="writer grid">
+                <div class="profile"><img class="zaya" src=${this.authorImage}></div>
+                <h6>Written by</h6>
+                <b>${this.author}</b>
+            </div>
+        </section>`;
         return returnHtml;
     },
 }
