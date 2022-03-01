@@ -10,7 +10,7 @@ export let News = {
         let returnHtml = "";
         returnHtml += `
                 <div class="piece">
-                <picture><img src=${this.image}alt="1"></picture>
+                <picture><img src=${this.image} alt="1"></picture>
                 <div class="innerText"><span>${this.title}</span></div>
                 </div>`;
         return returnHtml;

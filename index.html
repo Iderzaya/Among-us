@@ -35,13 +35,14 @@
 
             <a href="index.html"><img class="logo" src="./pages/public/images/logo.png" /></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" ><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
 
             <div class="collapse navbar-collapse" id="primaryNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="index.html">Maps</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/news">News</a></li>
+                    <li class="nav-item"><a class="nav-link active" id = "newsBtn" href="/news">News</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/character">Character</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/aboutus">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/article">Contacts</a></li>
@@ -78,7 +79,8 @@
         </nav>
     </header>
     <main>
-        <div id="myApp"></div>
+        <div id="myApp">
+        </div>
         <div class="headline">
             <img src="./pages/public/images/b1.jpeg">
             <div class="botline"></div>
@@ -190,4 +192,34 @@
         </form>
         <script src="spa.js" async></script>
     </footer>
+
+    <script type="text/javascript">
+    
+        const element = document.getElementById("newsBtn");
+        if(element){
+            element.addEventListener("click", showHideNews);
+        }
+
+
+        function showHideNews() {
+        //     let tempText = `<script type="module" src="../pages/public/javascripts/mainNews.js"><\/script>
+        //     <script>console.log("hi")<\/script>`
+        //     let tempRes = eval(tempText);
+        //     document.getElementById("myApp").innerHTML = tempRes;
+        var script = document.createElement("script");  
+        script.src = "./pages/public/javascripts/mainNews.js";
+        script.type = "module";
+
+        document.head.appendChild(script); 
+        }
+
+
+
+
+        // var htmlNews = ""
+        // htmlNews = `<script type="module" src="./pages/public/javascripts/mainNews.js"><\/script>`;
+
+    </script> -->
+
 </body>
+</html>

@@ -3,15 +3,15 @@
 
 class MyApp {
 
-  //# constructor үүсгэх
+    //# constructor үүсгэх
     constructor(appID) {
-        this.appContainerID =  "myApp";
+        this.appContainerID = "myApp";
         this.appData = new Map();
         this.appData.set("/", new Map());
     }
 
 
-//#endregion
+    //#endregion
 
     AddRoute(parentRoute, routeName, data) {
         this.appData.get(parentRoute).set(routeName, data);
@@ -31,75 +31,74 @@ class MyApp {
 class AboutUs {
 
 
-    
+
     Render() {
         return `
-        <main class="container-xl">
-        <div class="headline">
-            <img src="./public/images/aboutus.png">
+        <main>
+        <div class="headline aboutUs">
+            <img src="./pages/public/images/aboutus.png">
             <div class="botline"></div>
             <div class="topline"></div>
             <blockquote>About us</blockquote>
             <div class="pos">
-                <a href="#" class="trailer">watch it trailer</a>
+                <a href="#" class="trailer">watch trailer</a>
             </div>
         </div>
         <video playsinline autoplay muted loop id="bgvid">
-        <source src="./public/images/stars.mp4" type="video/mp4">
+        <source src="./pages/public/images/stars.mp4" type="video/mp4">
     </video>
-        <section>
+        <section class="container-xl">
             <div class="rule">
                 <h1>Game rule: how to play</h1>
                 <p>Prepare for departure but beware the Impostor! Play with 4-15 players online or via local WiFi as you attempt to hold your spaceship together and survive, but be careful. One or more random players among the crew are Impostors bent on
                     killing everyone!</p>
             </div>
             <h1 class="OurInfo">Here are all our awards taken from various occasions</h1>
-            <section id="parent" class="grid">
+            <section id="parent" class="grid" >
                 <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
+                    <div><img src="./pages/public/images/award1.jfif">
                         <p class="award">Best of best</p>
                     </div>
                 </div>
                 <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
+                    <div><img src="./pages/public/images/award1.jfif">
                         <p class="award">Best of best</p>
                     </div>
                 </div>
                 <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
+                    <div><img src="./pages/public/images/award1.jfif">
                         <p class="award">Best of best</p>
                     </div>
                 </div>
                 <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
+                    <div><img src="./pages/public/images/award1.jfif">
                         <p class="award">Best of best</p>
                     </div>
                 </div>
                 <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
+                    <div><img src="./pages/public/images/award1.jfif">
                         <p class="award">Best of best</p>
                     </div>
                 </div>
                 <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
+                    <div><img src="./pages/public/images/award1.jfif">
                         <p class="award">Best of best</p>
                     </div>
                 </div>
             </section>
             </div>
         </section>
-    </main>
-`
+    </main>`
     }
 
 }
 
 class Article {
-        
+
 
     Render() {
-        
-        return html`<main id="main">
+
+        return html `<main id="main">
         <div class="headline">
             <img src="./pages/public/images/new.jfif">
             <div class="botline"></div>
@@ -133,16 +132,10 @@ class Article {
     }
 }
 
-class News {  
-
-   
-    
-    
+class News {
 
     Render() {
-        
         return `
-       
         <main>
         <div class="headline">
             <img src="./pages/public/images/news pge.jfif">
@@ -152,10 +145,7 @@ class News {
             <h1 class="pos">Get the latest among us news</h1>
         </div>
         </div>
-        <div>
-            <video playsinline autoplay muted loop id="bgvid">
-        <source src="./pages/public/images/stars.mp4" type="video/mp4">
-    </video>
+        <div class = "container-xl">
             <div class="BigPost">
                 <div class="BigThumbnail">
                     <img src="./pages/public/images/amongus_news.png">
@@ -167,45 +157,38 @@ class News {
                 </div>
             </div>
 
-            <div class="title">
+            <div class="title ">
                 <p>More to explore</p>
             </div>
             <section class="grid" id="newsAll"></section>
         </div>
-    </main>`
-    
-            }}
+    </main>
+    `
+    }
+}
+
 
 //creating app 
 const myApp = new MyApp("myApp");
 
-
 const article = new Article();
 const aboutUs = new AboutUs();
 
-
-
-
 const news = new News();
 
-
-
-
-
 //Route list
-myApp.AddRoute("/","/news", news);
+myApp.AddRoute("/", "/news", news);
 myApp.AddRoute("/", "/aboutus", aboutUs);
 myApp.AddRoute("/", "/article", article);
 
 
 [...document.getElementsByClassName("nav-link active")].forEach(element => {
-    
+
     element.addEventListener("click", e => {
         e.preventDefault();
         history.pushState(null, "", e.target.href);
         //myApp.OnRoute(e.target.href);
-    }
-    )
+    })
 });
 
 window.addEventListener("popstate", e => {
@@ -213,11 +196,11 @@ window.addEventListener("popstate", e => {
     myApp.OnRoute(document.location.pathname);
 });
 
-history.pushState = function()
-{
-    History.prototype.pushState.apply(history, arguments);
-    myApp.OnRoute(document.location.pathname);
-}
-//myApp.OnRoute(location.pathname);
-//myApp.OnRoute("/aboutus");
-//myApp.OnRoute("/products");
+history.pushState = function() {
+        History.prototype.pushState.apply(history, arguments);
+        myApp.OnRoute(document.location.pathname);
+    }
+    //myApp.OnRoute(location.pathname);
+    //myApp.OnRoute("/aboutus");
+    //myApp.OnRoute("/products");
+    //Tsendayush

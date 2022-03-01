@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
-    <script type="module" src="./pages/public/javascripts/mainNews.js"></script>
-    <!--<script type="module" src="./public/javascripts/module/moduleNews.js"></script>-->
+    <title>Article</title>
+    <!--<script type="module" src="./pages/public/javascripts/mainArticle.js"></script>-->
+    <script  type="text/javascript" src="./pages/public/javascripts/index.js"></script>
     <script src="https://kit.fontawesome.com/7c3070b180.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./pages/public/css/newsstyle.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./pages/public/css/articlecss.css">
     <link rel="preconnect" href="https://api.jsonbin.io">
-    <link rel="preload" as="script" href="./pages/public/javascripts/moduleNews.js" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="script" href="./pages/public/javascripts/moduleArticle.js" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <style>
@@ -22,10 +22,15 @@
             src: url(./pages/public/font/in-your-face-joffrey/In\ your\ face\,\ joffrey!.ttf);
         }
     </style>
+
+    <script>
+        showId();
+    </script>
 </head>
 
-<body class="container-xl">
-    <header>
+<body>
+    <video playsinline autoplay muted loop id="bgvid"><source src="./pages/public/images/stars.mp4" type="video/mp4"></video>
+    <header class="container-xl">
         <nav class="navbar navbar-expand-lg navbar-fixed-top" aria-label="Primary website navigation">
 
             <a href="index.html"><img class="logo" src="./pages/public/images/logo.png" /></a>
@@ -34,12 +39,12 @@
 
             <div class="collapse navbar-collapse" id="primaryNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="index.html">Maps</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./pages/news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./pages/character.html">Character</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./pages/article.html">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="character.html">Character</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="article.html">Contacts</a></li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
@@ -72,36 +77,35 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div id="myApp"></div>
-        <div class="headline">
-            <img src="./pages/public/images/news pge.jfif">
+    <main id="main">
+        <!-- <div class="headline">
+            <img src="./pages/public/images/new.jfif">
             <div class="botline"></div>
             <div class="topline"></div>
-            <blockquote>News</blockquote>
-            <h1 class="pos">Get the latest among us news</h1>
+            <blockquote>The most viewed YOUTUBE AMONG US VIDEO</blockquote>
+            <h1 class="pos">News</h1>
         </div>
-        </div>
-        <div>
+        <section class="container-xl">
             <video playsinline autoplay muted loop id="bgvid">
-        <source src="./pages/public/images/stars.mp4" type="video/mp4">
-    </video>
-            <div class="BigPost">
-                <div class="BigThumbnail">
-                    <img src="./pages/public/images/amongus_news.png">
-                </div>
-                <div class="BigText">
-                    <h2>T’S AMONG US’ BIRTHDAYYYYYYYYYYYY!</h2>
-                    <p>On June 15th 2018, we released Among Us… as a local, mobile only game with just a few players. And now in 2021, not only is the game out on PC, Nintendo Switch, mobile and soon Xbox and PlayStation, but we also have this GIANT community
-                        of Crewmates and Impostors all over the world??? </p>
-                </div>
+              <source src="./pages/public/images/stars.mp4" type="video/mp4">
+            </video> 
+            <div class="text">
+                <p>The eighth Harry Potter story will continue in London within its two-part structure (in the North American productions, the play is being reimagined as a one-part experience) and is celebrating its big return with gorgeous new poster artwork.
+                    You can learn all about the artwork’s evolution here.</p>
+                <p>Reopening the West End production are Jamie Ballard as Harry Potter, Susie Trayling as Ginny Potter, Dominic Short as Albus Potter, Thomas Aldridge as Ron Weasley, Michelle Gayle as Hermione Granger, Phoenix Edwards as Rose Granger-Weasley,
+                    James Howard as Draco Malfoy, and Luke Sumner as Scorpius Malfoy.</p>
+                <p>The ensemble includes Lola Adaja, Samson Ajewole, David Annen, Valerie Antwi, Sue Appleby, Phil Cheadle, Craig Connolly, Robert Curtis, Tim Dewberry, Jim Fish, Thomas Gilbey, Jemma Gould, Rachel Hinds, Jordan Lang, Ronnie Lee, Katrina
+                    Lopes, Lucy Mangan, David Mara, Lucia McAnespie, Jayne McKenna, Kathryn Meisle, Gordon Millar, Ian Redford, Thomas Royal, Tom Sturgess, Joshua Talbot, Mark Theodore, Emma-May Uden, Madeleine Walker, and Wreh-asha Walton.</p>
+                <p>Seven children—Noah Alexander, Tom Quinn Alexander, Abby Barnes, Harley Barton, Chase Collard, Samuel Newby, and Cici Smith—alternate in two roles.</p>
+                <p>Welcome back, everyone!</p>
+                <p>You can learn more about the Harry Potter and the Cursed Child play in London via the official website.</p>
             </div>
-
-            <div class="title">
-                <p>More to explore</p>
-            </div>
-            <section class="grid" id="newsAll"></section>
-        </div>
+            <div class="writer grid">
+                <div class="profile"><img class="zaya" src="./pages/public/images/zaya.jfif"></div>
+                <h6>Written by</h6>
+                <b>Iderzaya</b>
+            </div> -->
+        </section>
     </main>
     <footer class="grid container-xl">
         <div class="menu ">
