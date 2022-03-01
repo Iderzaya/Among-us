@@ -1,5 +1,4 @@
 'use strict';
-//import News from './pages/public/javascripts/mainNews.js'
 
 class MyApp {
 

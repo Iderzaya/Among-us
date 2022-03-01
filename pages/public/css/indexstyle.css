@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 @media all {
+    html{
+        scroll-behavior: smooth;
+    }
     main {
         display: block
     }
@@ -45,6 +48,13 @@
     }
     .navbar-nav .nav-link {
         margin-left: 1.6vw;
+    }
+    #scrollMap{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        margin-left: 1.6vw;
+        display: block;
+        padding: 0.5rem 1rem;
     }
     .dropdown-toggle,
     footer li a,
@@ -274,7 +284,7 @@
     }
     .map p {
         padding: 0 20%;
-        font-family: "Alegreya Sans Thin", sans-serif;
+        font-family: 'Hubballi', cursive;
         letter-spacing: .08em
     }
     .maps {
@@ -364,7 +374,7 @@
     }
     .statText {
         color: #fff;
-        font-family: "Alegreya Sans Thin", sans-serif;
+        font-family: 'Hubballi', cursive;
         margin: auto 0
     }
     .statText h1 {
@@ -422,7 +432,7 @@
     }
     footer input {
         color: #fff;
-        font-family: "Alegreya Sans Thin", sans-serif;
+        font-family: 'Hubballi', cursive;
         padding: 5px 10px
     }
     footer form.grid {
