@@ -44,9 +44,6 @@ class AboutUs {
                 <a href="#" class="trailer">watch trailer</a>
             </div>
         </div>
-        <video playsinline autoplay muted loop id="bgvid">
-        <source src="./pages/public/images/stars.mp4" type="video/mp4">
-    </video>
         <section class="container-xl">
             <div class="rule">
                 <h1>Game rule: how to play</h1>
@@ -107,9 +104,6 @@ class Article {
             <h1 class="pos">News</h1>
         </div>
         <section class="container-xl">
-            <video playsinline autoplay muted loop id="bgvid">
-              <source src="./pages/public/images/stars.mp4" type="video/mp4">
-          </video>
             <div class="text">
                 <p>The eighth Harry Potter story will continue in London within its two-part structure (in the North American productions, the play is being reimagined as a one-part experience) and is celebrating its big return with gorgeous new poster artwork.
                     You can learn all about the artwork’s evolution here.</p>
