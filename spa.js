@@ -1,5 +1,5 @@
 'use strict';
-//import News from './pages/public/javascripts/mainNews.js'
+//import news from './pages/public/javascripts/mainNews.js'
 
 class MyApp {
 
@@ -99,7 +99,7 @@ class Article {
 
     Render() {
         
-        return html`<main id="main">
+        return `<main id="main">
         <div class="headline">
             <img src="./pages/public/images/new.jfif">
             <div class="botline"></div>
