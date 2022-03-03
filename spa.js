@@ -1,4 +1,8 @@
+
 'use strict';
+
+import html from './pages/public/javascripts/components/utils.js';
+import Awards from './pages/public/javascripts/awards/awards.js';
 
 class MyApp {
 
@@ -26,65 +30,36 @@ class MyApp {
     };
 
 }
-
-class AboutUs {
-
-
-
-    Render() {
+class Characters {
+    Render(){
         return `
-        <main>
-        <div class="headline aboutUs">
-            <img src="./pages/public/images/aboutus.png">
-            <div class="botline"></div>
-            <div class="topline"></div>
-            <blockquote>About us</blockquote>
-            <div class="pos">
-                <a href="#" class="trailer">watch trailer</a>
+        <div class="container-xl mt-4">
+            <div class="row">
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="first">
+                    <img src="./pages/public/images/crew.jpg">
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="second">
+                    <h2>Objective : Fill the group task bar or eject the Impostors.</h2>
+                    <p>Complete all the task on the ship or eject impostors to win. Call emergency meetings if you see any dead bodies or suspicious behavior. Check the Admin map and Security cameras to keep tabs on other Crewmates. React quickly to undo
+                        the Impostor’s sabotages. Make sure you have your alibi ready in case you’re falsely accused. Vote to eject suspected Impostors. Hope you guessed correctly!</p>
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="fourth">
+                    <h2>Objective : Kill off the crew.</h2>
+                    <p>Kill Crewmates and frame innocent bystanders. Pretend to do tasks to blend in with the Crewmates. Sneak through the vents to quickly move around. Sabotage tasks to cause chaos and confuse the crew. Close doors to trap victims and kill
+                        in private. Do everything you can to convince the crew that you’re one of them.</p>
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="third">
+                    <img src="./pages/public/images/imposter.png">
+                </div>
             </div>
         </div>
-        <section class="container-xl">
-            <div class="rule">
-                <h1>Game rule: how to play</h1>
-                <p>Prepare for departure but beware the Impostor! Play with 4-15 players online or via local WiFi as you attempt to hold your spaceship together and survive, but be careful. One or more random players among the crew are Impostors bent on
-                    killing everyone!</p>
-            </div>
-            <h1 class="OurInfo">Here are all our awards taken from various occasions</h1>
-            <section id="parent" class="grid" >
-                <div class="awards">
-                    <div><img src="./pages/public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./pages/public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./pages/public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./pages/public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./pages/public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./pages/public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-            </section>
-            </div>
-        </section>
-    </main>`
+        `
+    }
+}
+class AboutUs {
+
+    Render() {
+        return ` `
     }
 
 }
@@ -94,7 +69,7 @@ class Article {
 
     Render() {
 
-        return html `<main id="main">
+        return `<main id="main">
         <div class="headline">
             <img src="./pages/public/images/new.jfif">
             <div class="botline"></div>
@@ -160,19 +135,28 @@ class News {
     }
 }
 
+class Index{
+    Render() {
+        return`
+
+        `
+    }
+}
 
 //creating app 
 const myApp = new MyApp("myApp");
 
 const article = new Article();
 const aboutUs = new AboutUs();
-
+const characters = new Characters();
 const news = new News();
-
+const index = new Index();
 //Route list
 myApp.AddRoute("/", "/news", news);
 myApp.AddRoute("/", "/aboutus", aboutUs);
 myApp.AddRoute("/", "/article", article);
+myApp.AddRoute("/", "/characters", characters);
+myApp.AddRoute("/", "/", index);
 
 
 [...document.getElementsByClassName("nav-link active")].forEach(element => {

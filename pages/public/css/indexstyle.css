@@ -508,6 +508,10 @@
 }
 
 @media screen and (max-width:992px) {
+    #scrollMap{
+        text-align: end;
+        padding: 0;
+    }
     header {
         padding: 20px 0 0;
     }
