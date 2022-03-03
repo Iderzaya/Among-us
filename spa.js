@@ -1,17 +1,18 @@
+
 'use strict';
 //import news from './pages/public/javascripts/mainNews.js'
 
 class MyApp {
 
-  //# constructor үүсгэх
+    //# constructor үүсгэх
     constructor(appID) {
-        this.appContainerID =  "myApp";
+        this.appContainerID = "myApp";
         this.appData = new Map();
         this.appData.set("/", new Map());
     }
 
 
-//#endregion
+    //#endregion
 
     AddRoute(parentRoute, routeName, data) {
         this.appData.get(parentRoute).set(routeName, data);
@@ -27,75 +28,42 @@ class MyApp {
     };
 
 }
-
-class AboutUs {
-
-
-    
-    Render() {
+class Characters {
+    Render(){
         return `
-        <main class="container-xl">
-        <div class="headline">
-            <img src="./public/images/aboutus.png">
-            <div class="botline"></div>
-            <div class="topline"></div>
-            <blockquote>About us</blockquote>
-            <div class="pos">
-                <a href="#" class="trailer">watch it trailer</a>
+        <div class="container-xl mt-4">
+            <div class="row">
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="first">
+                    <img src="./pages/public/images/crew.jpg">
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="second">
+                    <h2>Objective : Fill the group task bar or eject the Impostors.</h2>
+                    <p>Complete all the task on the ship or eject impostors to win. Call emergency meetings if you see any dead bodies or suspicious behavior. Check the Admin map and Security cameras to keep tabs on other Crewmates. React quickly to undo
+                        the Impostor’s sabotages. Make sure you have your alibi ready in case you’re falsely accused. Vote to eject suspected Impostors. Hope you guessed correctly!</p>
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="fourth">
+                    <h2>Objective : Kill off the crew.</h2>
+                    <p>Kill Crewmates and frame innocent bystanders. Pretend to do tasks to blend in with the Crewmates. Sneak through the vents to quickly move around. Sabotage tasks to cause chaos and confuse the crew. Close doors to trap victims and kill
+                        in private. Do everything you can to convince the crew that you’re one of them.</p>
+                </div>
+                <div class="d-md-block col-sm-12 col-md-6 col-lg-6" id="third">
+                    <img src="./pages/public/images/imposter.png">
+                </div>
             </div>
         </div>
-        <video playsinline autoplay muted loop id="bgvid">
-        <source src="./public/images/stars.mp4" type="video/mp4">
-    </video>
-        <section>
-            <div class="rule">
-                <h1>Game rule: how to play</h1>
-                <p>Prepare for departure but beware the Impostor! Play with 4-15 players online or via local WiFi as you attempt to hold your spaceship together and survive, but be careful. One or more random players among the crew are Impostors bent on
-                    killing everyone!</p>
-            </div>
-            <h1 class="OurInfo">Here are all our awards taken from various occasions</h1>
-            <section id="parent" class="grid">
-                <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-                <div class="awards">
-                    <div><img src="./public/images/award1.jfif">
-                        <p class="award">Best of best</p>
-                    </div>
-                </div>
-            </section>
-            </div>
-        </section>
-    </main>
-`
+        `
+    }
+}
+class AboutUs {
+
+    Render() {
+        return ` `
     }
 
 }
 
 class Article {
-        
+
 
     Render() {
         
@@ -108,9 +76,6 @@ class Article {
             <h1 class="pos">News</h1>
         </div>
         <section class="container-xl">
-            <video playsinline autoplay muted loop id="bgvid">
-              <source src="./pages/public/images/stars.mp4" type="video/mp4">
-          </video>
             <div class="text">
                 <p>The eighth Harry Potter story will continue in London within its two-part structure (in the North American productions, the play is being reimagined as a one-part experience) and is celebrating its big return with gorgeous new poster artwork.
                     You can learn all about the artwork’s evolution here.</p>
@@ -133,16 +98,10 @@ class Article {
     }
 }
 
-class News {  
-
-   
-    
-    
+class News {
 
     Render() {
-        
         return `
-       
         <main>
         <div class="headline">
             <img src="./pages/public/images/news pge.jfif">
@@ -152,10 +111,7 @@ class News {
             <h1 class="pos">Get the latest among us news</h1>
         </div>
         </div>
-        <div>
-            <video playsinline autoplay muted loop id="bgvid">
-        <source src="./pages/public/images/stars.mp4" type="video/mp4">
-    </video>
+        <div class = "container-xl">
             <div class="BigPost">
                 <div class="BigThumbnail">
                     <img src="./pages/public/images/amongus_news.png">
@@ -167,45 +123,47 @@ class News {
                 </div>
             </div>
 
-            <div class="title">
+            <div class="title ">
                 <p>More to explore</p>
             </div>
             <section class="grid" id="newsAll"></section>
         </div>
-    </main>`
-    
-            }}
+    </main>
+    `
+    }
+}
+
+class Index{
+    Render() {
+        return`
+
+        `
+    }
+}
 
 //creating app 
 const myApp = new MyApp("myApp");
 
-
 const article = new Article();
 const aboutUs = new AboutUs();
-
-
-
-
+const characters = new Characters();
 const news = new News();
-
-
-
-
-
+const index = new Index();
 //Route list
-myApp.AddRoute("/","/news", news);
+myApp.AddRoute("/", "/news", news);
 myApp.AddRoute("/", "/aboutus", aboutUs);
 myApp.AddRoute("/", "/article", article);
+myApp.AddRoute("/", "/characters", characters);
+myApp.AddRoute("/", "/", index);
 
 
 [...document.getElementsByClassName("nav-link active")].forEach(element => {
-    
+
     element.addEventListener("click", e => {
         e.preventDefault();
         history.pushState(null, "", e.target.href);
         //myApp.OnRoute(e.target.href);
-    }
-    )
+    })
 });
 
 window.addEventListener("popstate", e => {
@@ -213,11 +171,11 @@ window.addEventListener("popstate", e => {
     myApp.OnRoute(document.location.pathname);
 });
 
-history.pushState = function()
-{
-    History.prototype.pushState.apply(history, arguments);
-    myApp.OnRoute(document.location.pathname);
-}
-//myApp.OnRoute(location.pathname);
-//myApp.OnRoute("/aboutus");
-//myApp.OnRoute("/products");
+history.pushState = function() {
+        History.prototype.pushState.apply(history, arguments);
+        myApp.OnRoute(document.location.pathname);
+    }
+    //myApp.OnRoute(location.pathname);
+    //myApp.OnRoute("/aboutus");
+    //myApp.OnRoute("/products");
+    //Tsendayush

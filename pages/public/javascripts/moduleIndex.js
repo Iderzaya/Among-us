@@ -8,11 +8,11 @@ export let News = {
 
     CreateHtml() {
         let returnHtml = "";
-        returnHtml += '\
-                <div class="piece">\
-                <picture><img src=' + this.image + ' alt="1"></picture>\
-                <div class="innerText"><span>' + this.title + '</span></div>\
-                </div>';
+        returnHtml += `
+                <div class="piece">
+                <picture><img src=${this.image}></picture>
+                <div class="innerText"><span>${this.title}</span></div>
+                </div>`;
         return returnHtml;
     },
 }
