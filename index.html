@@ -211,6 +211,12 @@
         }
     </script>
     <script src="./pages/public/javascripts/awards/myAwards.js" type="module"></script>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
 
 </body>
 
