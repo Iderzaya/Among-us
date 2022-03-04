@@ -7,5 +7,12 @@
   "scope": "/",
   "short_name": "iderzaya.github",
   "start_url": "/",
-  "theme_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src" : "../images/logoOriginal.png",
+      "sizes": "1652x360",
+      "type": "image/png"
+    }
+  ]
 }
