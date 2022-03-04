@@ -1,7 +1,5 @@
 'use strict';
-
 import AboutUs from "./pages/public/javascripts/awards/awards.js";
-
 class MyApp {
 
     //# constructor үүсгэх
@@ -58,7 +56,7 @@ class Characters {
 class Article {
 
     Render() {
-
+        
         return `<main id="main">
         <div class="headline">
             <img src="./pages/public/images/new.jfif">
