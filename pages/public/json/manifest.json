@@ -13,6 +13,11 @@
       "src" : "../images/logoOriginal.png",
       "sizes": "1652x360",
       "type": "image/png"
+    },
+    {
+      "src" : "../images/logo_512px.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
