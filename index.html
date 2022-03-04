@@ -18,10 +18,10 @@
     <link rel="manifest" href="./pages/public/json/manifest.json">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://api.jsonbin.io">
-    <link rel="preload" as="script" href="./pages/public/javascripts/moduleIndex.js" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <style>
         @font-face {
             font-family: "AmongUs";
@@ -37,13 +37,14 @@
             <a href="/" class=" nav-link active"><img class="logo" src="./pages/public/images/logo.png" /></a>
 
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" ><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
 
             <div class="collapse navbar-collapse" id="primaryNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-                    <li class="nav-item"><a class="active" href="/#map" id="scrollMap">Maps<a class="nav-link"></a></a></li>
-                    <li class="nav-item"><a class="nav-link active" id = "newsBtn" href="/news">News</a></li>
+                    <li class="nav-item"><a class="active" href="/#map" id="scrollMap">Maps<a class="nav-link"></a></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" id="newsBtn" href="/news">News</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/characters">Character</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/aboutus">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/article">Contacts</a></li>
@@ -105,7 +106,7 @@
         </section>
 
 
-        <div class="container-xl map" id = "map">
+        <div class="container-xl map" id="map">
             <span>Choose your</span>
             <strong>MAP</strong>
             <p>So far we have put our blood, sweat and tears to create the following MAPS! Download it for yourself and experience the creativeness all our hard-working designers put into creating!</p>
@@ -190,36 +191,25 @@
             <input class="formFeedback" type="text" aria-label="Enter your feedback" placeholder="Feedback">
             <input class="submit" type="submit" id="submit_feedback" values="Submit">
         </form>
-        <script src="spa.js" async></script>
     </footer>
 
     <script type="text/javascript">
-    
         const element = document.getElementById("newsBtn");
-        if(element){
+        if (element) {
             element.addEventListener("click", showHideNews);
         }
 
-
         function showHideNews() {
-        //     let tempText = `<script type="module" src="../pages/public/javascripts/mainNews.js"><\/script>
-        //     <script>console.log("hi")<\/script>`
-        //     let tempRes = eval(tempText);
-        //     document.getElementById("myApp").innerHTML = tempRes;
-        var script = document.createElement("script");  
-        script.src = "./pages/public/javascripts/mainNews.js";
-        script.type = "module";
 
-        document.head.appendChild(script); 
+            var script = document.createElement("script");
+            script.src = "./pages/public/javascripts/mainNews.js";
+            script.type = "module";
+
+            document.head.appendChild(script);
         }
-
-
-
-
-        // var htmlNews = ""
-        // htmlNews = `<script type="module" src="./pages/public/javascripts/mainNews.js"><\/script>`;
-
-    </script> -->
+    </script>
+    <script src="./pages/public/javascripts/awards/myAwards.js" type="module"></script>
 
 </body>
+
 </html>

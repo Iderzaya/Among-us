@@ -40,7 +40,6 @@
 .rule {
     margin: 40px 0;
 }
-
 #parent {
     text-align: center;
     margin: 20px 0;
@@ -55,16 +54,6 @@
     font-size: 30px;
 }
 
-.awards img {
-    border: rgba(255, 255, 255, 1);
-    border-style: solid;
-    border-width: 1px;
-    padding: 20px;
-}
-
-.award {
-    margin-top: 20px;
-}
 }
 
 @media screen and (max-width:992px) {
@@ -83,7 +72,4 @@
 }
 
 @media screen and (max-width:600px) {
-    .award  {
-        font-size: 30px;
-    }
 }
