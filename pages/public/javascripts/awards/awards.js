@@ -5,8 +5,6 @@ import Component from "../components/component.js";
     constructor(awData) {
         super();
         this.appData = awData;
-        console.log(this.appData);
-
     }
 
      Render() {

@@ -10,18 +10,14 @@ export let News = {
 
     CreateHtmlNews() {
         let returnHtml = "";
-        returnHtml += '<div>\
-                    <p class="ctr">\
-                        <a href="article.html"><img src=' + this.image + '></a>\
-                    </p>\
-                    <h2>' + this.title + '</h2>\
-                    <p id="author">' + this.author + '</p>\
-                </div>';
+        returnHtml += `<div>
+                    <p class="ctr">
+                        <a href="article.html"><img src= ${this.image}></a>
+                    </p>
+                    <h2>${this.title}</h2>
+                    <p id="author">${this.author}</p>
+                </div>`;
         return returnHtml;
-    },
-
-    returnTitle() {
-        document.getElementById("newsAll").setAttribute("id", this.id)
     },
 }
 

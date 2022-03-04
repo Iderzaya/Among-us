@@ -1,9 +1,9 @@
-import Component from "./component.js"; 
-
-export default class ReadMore extends Component {
+export default class ReadMore extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({mode: 'open'});
+        this.innerRoot = this.attachShadow({
+            mode: "open"
+        });
     }
 
     connectedCallback() {
@@ -12,35 +12,16 @@ export default class ReadMore extends Component {
 
     Render() {
         console.log("rendering...");
-        this.innerRoot.innerHTML = html `
+        this.innerRoot.innerHTML =  `
             <style>
-
-                #a2{
-                    display:none;
-                }
-        
-                #aa2::before {
-                    content:"❤";
-                    color:gray;
-                    cursor:pointer;
-                }
-        
-                #a2:checked+#aa2::before{
-                    color: tomato;
-                }
-        
-                label{user-select: none;}
-            
+            button{
+                background-color: red;
+            }
             </style>
     
-            <input id="a2" type="checkbox">
             
-            <label for="a2" id="aa2">${this.getAttribute("details") || 0}</label>`;
-
-        this.innerRoot.getElementById("details").addEventListener("click",console.log("123"));
-
+            <button>Read me</button>`;
     }
-
 }
 
-window.customElements.define("read-button", ReadMore);
+window.customElements.define("reading-but", ReadMore);

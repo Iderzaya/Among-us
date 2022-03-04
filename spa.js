@@ -1,5 +1,7 @@
 'use strict';
+
 import AboutUs from "./pages/public/javascripts/awards/awards.js";
+
 class MyApp {
 
     //# constructor үүсгэх
@@ -134,16 +136,6 @@ class Index {
 const myApp = new MyApp("myApp");
 const article = new Article();
 
-
-
-//const postUrlAwards = "https://api.jsonbin.io/b/6220dbeaa703bb674920f9f1/latest";
-// async function getPostAwards() {
-//     const response = await fetch(postUrlAwards);
-//     const data = await response.json();
-//     console.log(data);
-//     return data;
-// }; 
-
 const getPostAwards = fetch("https://api.jsonbin.io/b/6220dbeaa703bb674920f9f1/latest")
   .then((response) => response.json())
   .then((data) => {
@@ -151,7 +143,6 @@ const getPostAwards = fetch("https://api.jsonbin.io/b/6220dbeaa703bb674920f9f1/l
   });
 
 const dataAw = await getPostAwards;
-    console.log(dataAw);
 
 const aboutUs = new AboutUs(dataAw);
 

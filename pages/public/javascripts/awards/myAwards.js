@@ -38,7 +38,7 @@ class MyAwards extends HTMLElement {
             <div>
                 <img src="${this.getAttribute("image")}">
                 <p class="award">${this.getAttribute("name")}</p>
-                <read-button details = ${this.getAttribute("details")}></read-button>
+                <reading-but details = ${this.getAttribute("details")}></reading-but>
             </div>`
     }
 
