@@ -5,7 +5,7 @@ class MyAwards extends HTMLElement {
     constructor() {
         super();
         this.myShadowRoot = this.attachShadow({ mode: "open" });
-        this.myShadowRoot.innerHTML = html`
+        this.myShadowRoot.innerHTML = `
         <style>
         @import url(https://fonts.googleapis.com/css?family=Space+Mono);
         @media all {            

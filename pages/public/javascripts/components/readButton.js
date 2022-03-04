@@ -3,28 +3,42 @@ import Component from "./component.js";
 export default class ReadMore extends Component {
     constructor() {
         super();
-        this.myShadowRoot = this.attachShadow({ mode: "open" });
-        this.myShadowRoot.innerHTML = `
-        <style>
-        @import url(https://fonts.googleapis.com/css?family=Space+Mono);
-        @media all {            
-            button{
-                height:20px;
-                width: 30px;
-                background-color: red;
-            }
-            }
-            @media screen and (max-width:600px) {
-                
-            }
-        </style>
+        this.attachShadow({mode: 'open'});
+    }
 
-            <div>
-                <div class="moreInfo">
-                    <p>${this.getAttribute("details")}</p>
-                </div>
-                <button>Read More</button>
-            </div>`
+    connectedCallback() {
+        this.Render();
+    }
+
+    Render() {
+        console.log("rendering...");
+        this.innerRoot.innerHTML = html `
+            <style>
+
+                #a2{
+                    display:none;
+                }
+        
+                #aa2::before {
+                    content:"❤";
+                    color:gray;
+                    cursor:pointer;
+                }
+        
+                #a2:checked+#aa2::before{
+                    color: tomato;
+                }
+        
+                label{user-select: none;}
+            
+            </style>
+    
+            <input id="a2" type="checkbox">
+            
+            <label for="a2" id="aa2">${this.getAttribute("details") || 0}</label>`;
+
+        this.innerRoot.getElementById("details").addEventListener("click",console.log("123"));
+
     }
 
 }
