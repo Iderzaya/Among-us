@@ -1,20 +1,14 @@
-import Component from "../components/component.js";
-import Awards from "./moduleAwards.js";
+import Component from "../components/component.js"; 
 
-const postUrl = "https://api.jsonbin.io/b/6220dbeaa703bb674920f9f1/latest"; 
+ export default class AboutUs extends Component {
 
-export default class Awards extends Component {
-   
-    constructor(url, heregjihFunctionNews) {
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                heregjihFunctionNews(data.awards);
-            })
+    constructor(awData) {
+        super();
+        this.appData = awData;
     }
 
-    Render() {
-        return this.html`
+     Render() {
+        return `
         <main>
             <div class="headline aboutUs">
                 <img src="./pages/public/images/aboutus.png">
@@ -33,22 +27,21 @@ export default class Awards extends Component {
                 </div>
                 <h1 class="OurInfo">Here are all our awards taken from various occasions</h1>
                 <section id="parent" class="grid" >
-                ${ this.RenderList(this.appData.awards) }
+                ${this.RenderListAwards(this.appData.award) }
                 </section>
                 </div>
             </section>
         </main>
-        `;
-    }
+        `}
+        
 
-    RenderList(listOfAwards) {
+    RenderListAwards(listOfAwards) {
         let retVal = "";
 
         for (let aw of listOfAwards) {
-            retVal+=`<my-awards id=${aw.id}></my-awards>`
+            retVal += `<my-awards id="${aw.id}" image = "${aw.image}" name = "${aw.name}" class ="awards" details ="${aw.details}"></my-awards>`
         }
 
         return retVal;
     }
-
-}
+ }

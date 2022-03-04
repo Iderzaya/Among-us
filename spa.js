@@ -1,6 +1,6 @@
-
 'use strict';
-//import news from './pages/public/javascripts/mainNews.js'
+
+import AboutUs from "./pages/public/javascripts/awards/awards.js";
 
 class MyApp {
 
@@ -29,7 +29,7 @@ class MyApp {
 
 }
 class Characters {
-    Render(){
+    Render() {
         return `
         <div class="container-xl mt-4">
             <div class="row">
@@ -54,16 +54,8 @@ class Characters {
         `
     }
 }
-class AboutUs {
-
-    Render() {
-        return ` `
-    }
-
-}
 
 class Article {
-
 
     Render() {
         
@@ -133,19 +125,27 @@ class News {
     }
 }
 
-class Index{
+class Index {
     Render() {
-        return`
-
+        return `
         `
     }
 }
 
 //creating app 
 const myApp = new MyApp("myApp");
-
 const article = new Article();
-const aboutUs = new AboutUs();
+
+const getPostAwards = fetch("https://api.jsonbin.io/b/6220dbeaa703bb674920f9f1/latest")
+  .then((response) => response.json())
+  .then((data) => {
+    return data;
+  });
+
+const dataAw = await getPostAwards;
+
+const aboutUs = new AboutUs(dataAw);
+
 const characters = new Characters();
 const news = new News();
 const index = new Index();
