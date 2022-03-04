@@ -10,221 +10,29 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "blob:https://www.pwabuilder.com/db92dfbc-0564-47e8-8d21-f236cf8ad7ea",
-      "type": "image/png",
-      "sizes": "284x284",
-      "purpose": "any"
+      "src" : "../images/logoOriginal.png",
+      "sizes": "1652x360",
+      "type": "image/png"
     },
     {
-      "src": "blob:https://www.pwabuilder.com/df30be17-1da0-41cf-9739-9b85c0025deb",
-      "type": "image/png",
-      "sizes": "150x150",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/d12ba2d5-fb6d-4745-9094-2d060174a975",
-      "type": "image/png",
-      "sizes": "188x188",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/0fc51f00-1fca-420b-9807-9e70bae64d7f",
-      "type": "image/png",
-      "sizes": "225x225",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/91e07b54-88d2-4f83-867b-4384356f8975",
-      "type": "image/png",
-      "sizes": "300x300",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/6e0b310e-a97c-4561-b6a2-34d151a45cbf",
-      "type": "image/png",
-      "sizes": "600x600",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/729b8260-9b13-4439-8289-711d4e6c42ea",
-      "type": "image/png",
-      "sizes": "310x150",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/4c7c40bf-f798-4d1a-9175-3148332bac44",
-      "type": "image/png",
-      "sizes": "388x188",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/8e5ac115-7c17-428e-87a9-979cfb29e7d1",
-      "type": "image/png",
-      "sizes": "465x225",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/412c3fde-98bc-4054-9a35-9fc7bb0818fe",
-      "type": "image/png",
-      "sizes": "620x300",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/eae18353-e17b-45cf-b229-b76550a9cbe8",
-      "type": "image/png",
-      "sizes": "1240x600",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/7b27fe4d-82ee-46a1-b520-b72dfeef9c3e",
-      "type": "image/png",
-      "sizes": "388x388",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/6c360eaa-e8e0-4bdf-bc8a-548600c5348d",
-      "type": "image/png",
-      "sizes": "465x465",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/c2e47014-eb9c-4f3b-ae15-3ce14de0d065",
-      "type": "image/png",
-      "sizes": "620x620",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/4213aeda-22e5-4c16-8f8f-825bf3576a66",
-      "type": "image/png",
-      "sizes": "1240x1240",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/25582487-1526-4eda-a4b6-67d22b7aecbb",
-      "type": "image/png",
-      "sizes": "55x55",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/8f28fdb7-3fc1-422c-9286-592459209ceb",
-      "type": "image/png",
-      "sizes": "66x66",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/5ce6f0db-02da-4072-ac23-71480657df77",
-      "type": "image/png",
-      "sizes": "88x88",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/e06fbfbf-7c61-4f56-ad7f-2cc06f99dad9",
-      "type": "image/png",
-      "sizes": "176x176",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/fec1ee26-2991-4bed-bb5a-dbe84fcf445d",
-      "type": "image/png",
-      "sizes": "620x300",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/8bf02154-ede1-40a8-a348-092738ac21e0",
-      "type": "image/png",
-      "sizes": "775x375",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/5a8811c5-ca1c-49cb-8ce0-96ec0218e79a",
-      "type": "image/png",
-      "sizes": "930x450",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/83202b71-5c3e-4e15-966d-863c34ec77ea",
-      "type": "image/png",
-      "sizes": "1240x600",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/3e5bf995-9fae-4574-ac30-1f7f0b2c164c",
-      "type": "image/png",
-      "sizes": "2480x1200",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/7a51a432-863a-4dcc-b6eb-9e9373dd6269",
-      "type": "image/png",
-      "sizes": "256x256",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/de2e2a78-d1f6-4539-bd68-644cdeff1ebd",
-      "type": "image/png",
-      "sizes": "256x256",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/f1b1173d-0b39-46e6-ac8e-cdd9b1dbfa92",
-      "type": "image/png",
-      "sizes": "256x256",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/1449abc5-42df-4605-ba91-13ebb6dda10a",
-      "type": "image/png",
+      "src" : "../images/logo_512px.png",
       "sizes": "512x512",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
-      "src": "blob:https://www.pwabuilder.com/d1a7c554-3cb0-4166-818e-85fe33cf4126",
-      "type": "image/png",
+      "src": "../images/icon-192x192.png",
       "sizes": "192x192",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
-      "src": "blob:https://www.pwabuilder.com/b07b43fc-1ba4-4b8e-9d54-194886586d26",
-      "type": "image/png",
-      "sizes": "144x144",
-      "purpose": "any"
+        "src": "../images/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
     },
     {
-      "src": "blob:https://www.pwabuilder.com/ce92bf16-4994-4f80-80b0-8ed3217bc94c",
-      "type": "image/png",
-      "sizes": "100x100",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/b0a2f0a6-7d4d-4e6f-95f7-1db9871f24e8",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/51277831-513f-415b-8377-18c5ad275943",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/a2ec27f4-f40b-4d64-96ea-72a10c61b232",
-      "type": "image/png",
-      "sizes": "256x256",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/42dd1ac0-e485-4886-855f-76edbb02bbb8",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any"
-    },
-    {
-      "src": "blob:https://www.pwabuilder.com/190aa8b3-0637-4425-a57c-82a50d43bcca",
-      "type": "image/png",
-      "sizes": "1024x1024",
-      "purpose": "any"
+        "src": "../images/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png"
     }
-  ],
-  "screenshots": []
+  ]
 }
