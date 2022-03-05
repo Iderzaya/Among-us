@@ -1,0 +1,201 @@
+const express = require('express')
+const app = express()
+const port = 8000;
+
+app.get('/', (req, res) => res.send(`<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us</title>
+    <script type="module" src="./pages/public/javascripts/mainIndex.js"></script>
+    <script type="module" src="./pages/public/javascripts/mainNews.js"></script>
+    <script type="module" src="./pages/public/javascripts/moduleNews.js"></script>
+    <script src="https://kit.fontawesome.com/7c3070b180.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="spa.js" async type="module"></script>
+    <link rel="stylesheet" href="./pages/public/css/indexstyle.css">
+    <link rel="stylesheet" href="./pages/public/css/aboutcss.css">
+    <link rel="stylesheet" href="./pages/public/css/articlecss.css">
+    <link rel="stylesheet" href="./pages/public/css/characterstyle.css">
+    <link rel="stylesheet" href="./pages/public/css/newsstyle.css">
+    <link rel="manifest" href="./pages/public/json/manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://api.jsonbin.io">
+    <link rel="preload" as="script" href="./pages/public/javascripts/moduleIndex.js" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <style>
+        @font-face {
+            font-family: "AmongUs";
+            src: url(./pages/public/font/in-your-face-joffrey/In\ your\ face\,\ joffrey!.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-xl">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top" aria-label="Primary website navigation">
+
+            <a href="/" class=" nav-link active"><img class="logo" src="./pages/public/images/logo.png" /></a>
+
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" ><span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span></button>
+
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="active" href="/#map" id="scrollMap">Maps<a class="nav-link"></a></a></li>
+                    <li class="nav-item"><a class="nav-link active" id = "newsBtn" href="/news">News</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/characters">Character</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/aboutus">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/article">Contacts</a></li>
+                </ul>
+                <ul class="navbar-nav ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">Playstore</a>
+                                <a href="#" class="dropdown-item">App Store</a>
+                                <a href="#" class="dropdown-item">Steam</a>
+                                <a href="#" class="dropdown-item">Xbox</a>
+                                <a href="#" class="dropdown-item">Play Station</a>
+                                <a href="#" class="dropdown-item">Nintendo</a>
+                                <a href="#" class="dropdown-item">Epic Games</a>
+                                <a href="#" class="dropdown-item">Windows Store</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">Facebook group</a>
+                                <a href="#" class="dropdown-item">Discord</a>
+                                <a href="#" class="dropdown-item">Instagram</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="myApp">
+        </div>
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="./pages/public/images/stars.mp4" type="video/mp4">
+        </video>
+        <div class="headline">
+            <img src="./pages/public/images/b1.jpeg">
+            <div class="botline"></div>
+            <div class="topline"></div>
+            <blockquote>"Can you find the impostor?"</blockquote>
+            <div class=" pos">
+                <a href="#" class="download">Download Now</a>
+                <a href="#" class="learn">Learn More</a>
+            </div>
+        </div>
+
+        <section class="container-xl news">
+            <div class="title">
+                <p>Latest news & announcements</p>
+            </div>
+            <div class="newsCards">
+            </div>
+        </section>
+
+
+        <div class="container-xl map" id = "map">
+            <span>Choose your</span>
+            <strong>MAP</strong>
+            <p>So far we have put our blood, sweat and tears to create the following MAPS! Download it for yourself and experience the creativeness all our hard-working designers put into creating!</p>
+            <div class="maps" id="maps">
+
+                <div class="card card.isVisible">
+                    <img src="./pages/public/images/skeld.jpg" />
+                    <h2 class="card-title">The Skeld</h2>
+                </div>
+                <div class="card card.isVisible">
+                    <img src="./pages/public/images/mira.jpg" />
+                    <h2 class="card-title">Mira HQ</h2>
+                </div>
+                <div class="card card.isVisible">
+                    <img src="./pages/public/images/polus.jpg" />
+                    <h2 class="card-title">Polus</h2>
+                </div>
+                <div class="card card.isVisible">
+                    <img src="./pages/public/images/airship.jpg" />
+                    <h2 class="card-title">The Airship</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xl">
+
+            <div class="statistics row">
+
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <img src="./pages/public/images/skin.jpeg">
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7">
+
+                    <div class="statText">
+                        <h1>Characters</h1>
+                        <p>There are only 2 characters in the game! Once create your room or get into one, and start it your character will be assigned to you randomly. Click on Details to find out more~!</p>
+                        <button>Details</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="grid container-xl">
+        <div class="menu ">
+            <nav>
+                <ul class="list-inline">
+
+                    <li class="logoli">
+                        <a href="index.html"><img class="logo" src="./pages/public/images/logo.png" /></a>
+                    </li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">About Us</a></li>
+
+                </ul>
+            </nav>
+            <hr>
+            <div class="firstHalf">
+                <ul>
+                    <li>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <p role="contentinfo">All content &copy; Among Us</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <form action="#" method="post" class="grid">
+            <input class="formName" type="text" aria-label="Enter your name" placeholder="Your Name">
+            <input class="formMail" type="email" aria-label="Enter your email address" placeholder="Your Email Address">
+            <input class="formFeedback" type="text" aria-label="Enter your feedback" placeholder="Feedback">
+            <input class="submit" type="submit" id="submit_feedback" values="Submit">
+        </form>
+        <script src="spa.js" async></script>
+    </footer>`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
